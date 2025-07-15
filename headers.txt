@@ -1,0 +1,23 @@
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 168
+cache-control: public, max-age=0, must-revalidate
+content-disposition: inline
+content-type: text/html; charset=utf-8
+date: Tue, 15 Jul 2025 20:03:47 GMT
+etag: "521822beebe16a40dd5f5141f22bbcf9"
+referrer-policy: strict-origin-when-cross-origin
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-matched-path: /
+x-nextjs-prerender: 1
+x-nextjs-stale-time: 300
+x-vercel-cache: HIT
+x-vercel-id: fra1::lsgxr-1752609827580-5e6355275716
+x-xss-protection: 1; mode=block
+content-length: 113169
+
