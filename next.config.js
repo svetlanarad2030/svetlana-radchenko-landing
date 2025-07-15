@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Force fresh build - disable cache
+  distDir: '.next',
   turbopack: {
     // Turbopack configuration for development
   },
