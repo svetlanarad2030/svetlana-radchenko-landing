@@ -40,35 +40,23 @@ export function HeroSection({ className }: HeroSectionProps): ReactElement {
             </h1>
             
             <p className="text-xl md:text-2xl text-text-primary mb-6 font-medium">
-              Эксперт в сфере финансов и стратегии
+              Эксперт по стратегии и финансам • Преподаватель • Ментор
             </p>
             
             <div className="space-y-4 mb-8">
               <p className="text-base md:text-lg text-text-secondary max-w-xl mx-auto lg:mx-0">
-                Профессиональные консультации по финансовому моделированию, 
-                бизнес-планированию и стратегическому развитию бизнеса.
-              </p>
-              
-              <p className="text-base md:text-lg text-text-secondary max-w-xl mx-auto lg:mx-0">
-                Помогаю компаниям принимать обоснованные финансовые решения 
-                и достигать устойчивого роста.
+                Помогаю увидеть бизнес в цифрах, найти точки роста и двигаться к цели. 
+                Работаю на стыке аналитики и эмпатии: разбираю бизнес как систему и помогаю принимать разумные, точные решения.
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex justify-center lg:justify-start">
               <ConsultationButton
                 sourcePage="home"
                 variant="primary"
                 size="lg"
                 className="shadow-lg hover:shadow-xl"
               />
-              
-              <a
-                href="#services"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-brand-primary border-2 border-brand-primary rounded-lg hover:bg-brand-primary hover:text-white transition-colors duration-200"
-              >
-                Узнать больше
-              </a>
             </div>
           </div>
           
@@ -77,7 +65,7 @@ export function HeroSection({ className }: HeroSectionProps): ReactElement {
             <div className="relative w-full max-w-md lg:max-w-lg">
               <div className="aspect-[3/4] relative rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/image12.png"
+                  src="/images/image3.jpeg"
                   alt="Светлана Радченко - Эксперт в сфере финансов и стратегии"
                   fill
                   className="object-cover"

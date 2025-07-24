@@ -7,6 +7,7 @@ import { ReactElement } from 'react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Navigation } from '@/components/navigation/Navigation';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { ConsultationButton } from '@/components/forms/ConsultationButton';
@@ -105,28 +106,7 @@ export default function TrainingPage(): ReactElement {
 
   return (
     <div className="min-h-screen bg-bg-primary">
-      {/* Navigation */}
-      <nav className="bg-white shadow-sm px-4 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-brand-primary">
-            Светлана Радченко
-          </Link>
-          <div className="flex items-center gap-6">
-            <Link href="/" className="text-text-secondary hover:text-brand-primary transition-colors">
-              Главная
-            </Link>
-            <Link href="/training" className="text-brand-primary font-medium">
-              Обучение
-            </Link>
-            <Link href="/financial-consulting" className="text-text-secondary hover:text-brand-primary transition-colors">
-              Консалтинг
-            </Link>
-            <Link href="/cfo-service" className="text-text-secondary hover:text-brand-primary transition-colors">
-              CFO-сервис
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="py-16 md:py-24 px-4">

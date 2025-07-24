@@ -209,60 +209,47 @@ export default function RootLayout({ children }: RootLayoutProps): ReactElement 
         {/* Footer */}
         <footer className="bg-text-primary text-white py-8 px-4">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-center">
+              {/* Email */}
               <div>
-                <h3 className="text-xl font-bold mb-4">Светлана Радченко</h3>
-                <p className="text-gray-300">
-                  Эксперт в сфере финансов и стратегии
-                </p>
+                <a 
+                  href="mailto:FinModelGuru@gmail.com" 
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  FinModelGuru@gmail.com
+                </a>
               </div>
               
+              {/* WhatsApp */}
               <div>
-                <h4 className="text-lg font-semibold mb-4">Контакты</h4>
-                <div className="space-y-2 text-gray-300">
-                  <div>
-                    <a href="mailto:finmodelguru@gmail.com" className="hover:text-white transition-colors">
-                      finmodelguru@gmail.com
-                    </a>
-                  </div>
-                  <div>
-                    <a href="https://t.me/FinModelGuru" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                      @FinModelGuru
-                    </a>
-                  </div>
-                  <div>
-                    <a href="https://wa.me/79262240270" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                      +7 926 2240270
-                    </a>
-                  </div>
-                </div>
+                <span className="text-gray-300">WhatsApp </span>
+                <a 
+                  href="https://wa.me/79262240270" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  +7 926 2240270
+                </a>
               </div>
               
-              <div>
-                <h4 className="text-lg font-semibold mb-4">Услуги</h4>
-                <div className="space-y-2 text-gray-300">
-                  <div>
-                    <a href="/training" className="hover:text-white transition-colors">
-                      Обучение
-                    </a>
-                  </div>
-                  <div>
-                    <a href="/financial-consulting" className="hover:text-white transition-colors">
-                      Финансовый консалтинг
-                    </a>
-                  </div>
-                  <div>
-                    <a href="/cfo-service" className="hover:text-white transition-colors">
-                      CFO-сервис
-                    </a>
-                  </div>
-                </div>
+              {/* Telegram */}
+              <div className="flex items-center gap-2">
+                <span className="text-gray-300">💬</span>
+                <a 
+                  href="https://t.me/FinModelGuru" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  @FinModelGuru
+                </a>
               </div>
             </div>
             
-            <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <div className="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
               <p>
-                © 2024 Светлана Радченко. Все права защищены.
+                © FinModelGuru 2025
               </p>
             </div>
           </div>
