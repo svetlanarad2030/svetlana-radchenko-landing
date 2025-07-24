@@ -81,25 +81,6 @@ export function HeroSection({ className }: HeroSectionProps): ReactElement {
           </div>
         </div>
         
-        {/* Scroll indicator */}
-        <div className="hidden lg:flex justify-center mt-16">
-          <div className="animate-bounce">
-            <svg
-              className="w-6 h-6 text-brand-primary"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 14l-7 7m0 0l-7-7m7 7V3"
-              />
-            </svg>
-          </div>
-        </div>
       </div>
     </section>
   );

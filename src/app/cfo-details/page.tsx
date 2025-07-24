@@ -5,6 +5,7 @@
 
 import { ReactElement } from 'react';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { Navigation } from '@/components/navigation/Navigation';
 import { ConsultationButton } from '@/components/forms/ConsultationButton';
 
@@ -91,6 +92,19 @@ export default function CfoDetailsPage(): ReactElement {
           <p className="text-xl text-text-secondary max-w-4xl mx-auto leading-relaxed">
             Управление финансами как партнёрская функция. Стратегия, контроль, инвестиции.
           </p>
+        </section>
+
+        {/* Image Section */}
+        <section className="mb-16 text-center">
+          <div className="relative w-full max-w-2xl mx-auto">
+            <Image
+              src="/images/image18.jpeg"
+              alt="Финансовый директор на аутсорсе и сопровождение сделок"
+              width={800}
+              height={400}
+              className="rounded-2xl shadow-lg w-full h-auto"
+            />
+          </div>
         </section>
 
         {/* Блок 2: Введение */}

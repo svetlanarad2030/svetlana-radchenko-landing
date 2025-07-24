@@ -5,6 +5,7 @@
 
 import { ReactElement } from 'react';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { Navigation } from '@/components/navigation/Navigation';
 import { ConsultationButton } from '@/components/forms/ConsultationButton';
 
@@ -51,6 +52,19 @@ export default function TrainingDetailsPage(): ReactElement {
           </p>
         </section>
 
+        {/* Image Section */}
+        <section className="mb-16 text-center">
+          <div className="relative w-full max-w-2xl mx-auto">
+            <Image
+              src="/images/image13.jpg"
+              alt="Обучение финансовому моделированию"
+              width={800}
+              height={400}
+              className="rounded-2xl shadow-lg w-full h-auto"
+            />
+          </div>
+        </section>
+
         {/* Блок 2: Введение */}
         <section className="mb-16">
           <div className="bg-white rounded-2xl p-8 shadow-sm">
@@ -90,6 +104,19 @@ export default function TrainingDetailsPage(): ReactElement {
                   <h3 className="text-2xl font-bold text-brand-primary mb-2">
                     Онлайн курс-практикум «5 шагов к финансовой модели» на платформе Stepik.org
                   </h3>
+                </div>
+              </div>
+              
+              {/* Online Course Image */}
+              <div className="mb-6 text-center">
+                <div className="relative w-full max-w-lg mx-auto">
+                  <Image
+                    src="/images/image14.jpg"
+                    alt="Онлайн-курс на платформе Stepik"
+                    width={600}
+                    height={300}
+                    className="rounded-xl shadow-md w-full h-auto"
+                  />
                 </div>
               </div>
               
@@ -136,6 +163,19 @@ export default function TrainingDetailsPage(): ReactElement {
                 </div>
               </div>
               
+              {/* Group Workshop Image */}
+              <div className="mb-6 text-center">
+                <div className="relative w-full max-w-lg mx-auto">
+                  <Image
+                    src="/images/image15.jpg"
+                    alt="Групповой воркшоп по финансовому моделированию"
+                    width={600}
+                    height={300}
+                    className="rounded-xl shadow-md w-full h-auto"
+                  />
+                </div>
+              </div>
+              
               <div className="space-y-4">
                 <ul className="space-y-2 text-text-primary">
                   <li className="flex items-start gap-2">
@@ -166,6 +206,19 @@ export default function TrainingDetailsPage(): ReactElement {
                   <h3 className="text-2xl font-bold text-brand-primary mb-2">
                     Образовательные программы (RU/EN)
                   </h3>
+                </div>
+              </div>
+              
+              {/* Educational Programs Image */}
+              <div className="mb-6 text-center">
+                <div className="relative w-full max-w-lg mx-auto">
+                  <Image
+                    src="/images/image16.jpg"
+                    alt="Образовательные программы и курсы под ключ"
+                    width={600}
+                    height={300}
+                    className="rounded-xl shadow-md w-full h-auto"
+                  />
                 </div>
               </div>
               
