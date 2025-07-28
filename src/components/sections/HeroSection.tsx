@@ -40,7 +40,7 @@ export function HeroSection({ className }: HeroSectionProps): ReactElement {
             </h1>
             
             <p className="text-xl md:text-2xl text-text-primary mb-6 font-medium">
-              Эксперт по стратегии и финансам • Преподаватель • Ментор
+              Эксперт по стратегии и финансам Преподаватель Ментор
             </p>
             
             <div className="space-y-4 mb-8">

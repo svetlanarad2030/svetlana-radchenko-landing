@@ -34,10 +34,10 @@ export default function ServicesPage(): ReactElement {
           </section>
 
           {/* Services Sections */}
-          <div className="space-y-16">
+          <div className="space-y-16 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-8">
             
             {/* 1. Обучение */}
-            <section className="bg-white rounded-2xl p-8 shadow-sm">
+            <section className="bg-brand-primary/5 rounded-2xl p-8 shadow-sm border border-brand-primary/10">
               <div className="flex items-start gap-4 mb-6">
                 <div className="text-3xl">🧠</div>
                 <div>
@@ -93,7 +93,7 @@ export default function ServicesPage(): ReactElement {
             </section>
 
             {/* 2. Финансовый консалтинг и менторство */}
-            <section className="bg-white rounded-2xl p-8 shadow-sm">
+            <section className="bg-brand-primary/5 rounded-2xl p-8 shadow-sm border border-brand-primary/10">
               <div className="flex items-start gap-4 mb-6">
                 <div className="text-3xl">🔍</div>
                 <div>
@@ -169,7 +169,7 @@ export default function ServicesPage(): ReactElement {
             </section>
 
             {/* 3. Независимый директор / Финансовый директор */}
-            <section className="bg-white rounded-2xl p-8 shadow-sm">
+            <section className="bg-brand-primary/5 rounded-2xl p-8 shadow-sm border border-brand-primary/10 lg:col-span-2 lg:max-w-3xl lg:mx-auto">
               <div className="flex items-start gap-4 mb-6">
                 <div className="text-3xl">📊</div>
                 <div>

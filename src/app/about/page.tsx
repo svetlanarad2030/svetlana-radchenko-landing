@@ -50,16 +50,11 @@ export default function AboutPage(): ReactElement {
               увидеть и проанализировать возможности. В сложных многоплановых задачах подключаю проверенных экспертов.
             </p>
             
-            <div className="bg-brand-primary/5 p-6 rounded-xl border-l-4 border-brand-primary my-8">
-              <p className="text-lg font-medium text-brand-primary mb-2">
-                Моё глубокое убеждение:
-              </p>
-              <p className="text-lg leading-relaxed">
-                финансовая модель — это колоссальный внутренний ресурс развития компании.
-                <br />
-                <strong>Понять — значит начать управлять. Сэкономить — значит заработать</strong>
-              </p>
-            </div>
+            <p className="text-lg leading-relaxed">
+              Моё глубокое убеждение: Финансовая модель помогает увидеть, как может развиваться бизнес. 
+              Но это не просто проекция — это способ подумать вперёд, увидеть риски и возможности. 
+              Понять — значит управлять.
+            </p>
           </div>
         </section>
 
@@ -69,7 +64,7 @@ export default function AboutPage(): ReactElement {
             Факты, за которыми — опыт, глубина и подход
           </h2>
           
-          <div className="grid md:grid-cols-1 gap-6 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {/* Experience */}
             <div className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-sm border border-gray-100">
               <div className="text-2xl">🗓</div>
@@ -125,7 +120,9 @@ export default function AboutPage(): ReactElement {
               variant="primary"
               size="lg"
               className="shadow-lg hover:shadow-xl"
-            />
+            >
+              направить запрос
+            </ConsultationButton>
           </div>
         </section>
       </div>
