@@ -21,7 +21,6 @@ export function Navigation(): ReactElement {
     { href: '/', label: 'Главная' },
     { href: '/about', label: 'Кто я и чем могу быть полезна' },
     { href: '/services', label: 'Услуги' },
-    { href: '/partners', label: 'Партнеры и клиенты' },
     { href: '/contact', label: 'Контактный блок' },
   ];
 
