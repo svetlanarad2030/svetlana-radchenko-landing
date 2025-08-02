@@ -99,12 +99,12 @@ export default function ConsultingDetailsPage(): ReactElement {
 
         {/* Image Section */}
         <section className="mb-16 text-center">
-          <div className="relative w-full max-w-2xl mx-auto">
+          <div className="relative w-full max-w-md mx-auto">
             <Image
               src="/images/image17.jpeg"
               alt="Финансовый консалтинг и менторство"
-              width={800}
-              height={400}
+              width={400}
+              height={200}
               className="rounded-2xl shadow-lg w-full h-auto"
             />
           </div>
@@ -204,7 +204,7 @@ export default function ConsultingDetailsPage(): ReactElement {
         {/* Блок 6: Призыв к действию */}
         <section className="text-center">
           <div className="bg-white rounded-2xl p-8 shadow-sm max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold text-brand-primary mb-4">
+            <h3 className="text-2xl font-bold text-brand-accent mb-4">
               Готовы обсудить ваш проект?
             </h3>
             

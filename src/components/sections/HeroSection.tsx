@@ -28,7 +28,7 @@ export interface HeroSectionProps {
 export function HeroSection({ className }: HeroSectionProps): ReactElement {
   return (
     <section className={cn(
-      'min-h-screen flex items-center justify-center px-4 py-16 bg-bg-primary',
+      'min-h-[70vh] flex items-center justify-center px-4 py-16 bg-bg-primary',
       className
     )}>
       <div className="max-w-7xl mx-auto w-full">
@@ -40,7 +40,9 @@ export function HeroSection({ className }: HeroSectionProps): ReactElement {
             </h1>
             
             <p className="text-xl md:text-2xl text-text-primary mb-6 font-medium">
-              Эксперт по стратегии и финансам Преподаватель Ментор
+              Эксперт по стратегии и финансам<br />
+              Преподаватель<br />
+              Ментор
             </p>
             
             <div className="space-y-4 mb-8">
@@ -56,7 +58,9 @@ export function HeroSection({ className }: HeroSectionProps): ReactElement {
                 variant="primary"
                 size="lg"
                 className="shadow-lg hover:shadow-xl"
-              />
+              >
+                Направить запрос
+              </ConsultationButton>
             </div>
           </div>
           

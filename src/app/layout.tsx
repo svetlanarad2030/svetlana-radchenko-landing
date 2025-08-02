@@ -192,7 +192,7 @@ export default function RootLayout({ children }: RootLayoutProps): ReactElement 
           }}
         />
       </head>
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${inter.className} antialiased min-h-screen flex flex-col`}>
         {/* Skip to main content link for accessibility */}
         <a
           href="#main-content"
@@ -202,12 +202,12 @@ export default function RootLayout({ children }: RootLayoutProps): ReactElement 
         </a>
         
         {/* Main content */}
-        <main id="main-content" className="min-h-screen">
+        <main id="main-content" className="flex-grow">
           {children}
         </main>
         
         {/* Footer */}
-        <footer className="bg-text-primary text-white py-8 px-4">
+        <footer className="bg-brand-accent text-white py-8 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-center">
               {/* Email */}

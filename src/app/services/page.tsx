@@ -37,9 +37,8 @@ export default function ServicesPage(): ReactElement {
           <div className="space-y-16 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-8">
             
             {/* 1. Обучение */}
-            <section className="bg-brand-primary/5 rounded-2xl p-8 shadow-sm border border-brand-primary/10">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="text-3xl">🧠</div>
+            <section className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
+              <div className="mb-6">
                 <div>
                   <h2 className="text-3xl font-bold text-brand-primary mb-2">
                     1. Обучение
@@ -93,9 +92,8 @@ export default function ServicesPage(): ReactElement {
             </section>
 
             {/* 2. Финансовый консалтинг и менторство */}
-            <section className="bg-brand-primary/5 rounded-2xl p-8 shadow-sm border border-brand-primary/10">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="text-3xl">🔍</div>
+            <section className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200">
+              <div className="mb-6">
                 <div>
                   <h2 className="text-3xl font-bold text-brand-primary mb-2">
                     2. Финансовый консалтинг и менторство
@@ -169,9 +167,8 @@ export default function ServicesPage(): ReactElement {
             </section>
 
             {/* 3. Независимый директор / Финансовый директор */}
-            <section className="bg-brand-primary/5 rounded-2xl p-8 shadow-sm border border-brand-primary/10 lg:col-span-2 lg:max-w-3xl lg:mx-auto">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="text-3xl">📊</div>
+            <section className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200 lg:col-span-2 lg:max-w-3xl lg:mx-auto">
+              <div className="mb-6">
                 <div>
                   <h2 className="text-3xl font-bold text-brand-primary mb-2">
                     3. Независимый директор / Финансовый директор
@@ -225,23 +222,6 @@ export default function ServicesPage(): ReactElement {
             </section>
           </div>
 
-          {/* CTA Section */}
-          <section className="text-center mt-16">
-            <div className="max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-brand-primary mb-6">
-                Готовы обсудить ваш проект?
-              </h3>
-              <p className="text-lg text-text-secondary mb-8">
-                Расскажите о задачах вашего бизнеса, и я помогу найти оптимальные решения
-              </p>
-              <ConsultationButton
-                sourcePage="services"
-                variant="primary"
-                size="lg"
-                className="shadow-lg hover:shadow-xl"
-              />
-            </div>
-          </section>
         </div>
       </main>
     </div>

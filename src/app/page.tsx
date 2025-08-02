@@ -16,7 +16,7 @@ import { HeroSection } from '@/components/sections/HeroSection';
  */
 export default function HomePage(): ReactElement {
   return (
-    <div className="min-h-screen">
+    <div>
       <Navigation />
       <HeroSection />
     </div>

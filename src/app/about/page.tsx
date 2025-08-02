@@ -67,8 +67,7 @@ export default function AboutPage(): ReactElement {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {/* Experience */}
-            <div className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-              <div className="text-2xl">🗓</div>
+            <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
               <div>
                 <h3 className="font-bold text-brand-primary text-xl mb-2">
                   26+ лет опыта в финансах
@@ -80,8 +79,7 @@ export default function AboutPage(): ReactElement {
             </div>
 
             {/* Projects */}
-            <div className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-              <div className="text-2xl">📊</div>
+            <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
               <div>
                 <h3 className="font-bold text-brand-primary text-xl mb-2">
                   100+ реализованных проектов
@@ -93,8 +91,7 @@ export default function AboutPage(): ReactElement {
             </div>
 
             {/* Approach */}
-            <div className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-              <div className="text-2xl">🧩</div>
+            <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
               <div>
                 <h3 className="font-bold text-brand-primary text-xl mb-2">
                   Бутиковый подход
@@ -107,47 +104,8 @@ export default function AboutPage(): ReactElement {
           </div>
         </section>
 
-        {/* Partners Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-brand-primary mb-8 text-center">
-            Партнеры и клиенты
-          </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto text-center mb-12">
-            Доверие ведущих компаний — результат профессионализма и качества работы
-          </p>
-
-
-          {/* Trust Statement */}
-          <div className="bg-brand-primary/5 p-8 rounded-xl border-l-4 border-brand-primary max-w-4xl mx-auto mb-12">
-            <h3 className="text-2xl font-bold text-brand-primary mb-4">
-              Партнерство основано на доверии
-            </h3>
-            <p className="text-lg text-text-secondary leading-relaxed">
-              За годы работы я сотрудничала с компаниями различных отраслей и масштабов — 
-              от стартапов до крупных корпораций. Каждый проект уникален, но объединяет их одно: 
-              стремление к росту и готовность работать с цифрами осознанно.
-            </p>
-          </div>
-
-          {/* Statistics */}
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center bg-white p-8 rounded-xl shadow-sm">
-              <div className="text-3xl font-bold text-brand-primary mb-2">100+</div>
-              <div className="text-text-secondary">Реализованных проектов</div>
-            </div>
-            <div className="text-center bg-white p-8 rounded-xl shadow-sm">
-              <div className="text-3xl font-bold text-brand-primary mb-2">26+</div>
-              <div className="text-text-secondary">Лет опыта</div>
-            </div>
-            <div className="text-center bg-white p-8 rounded-xl shadow-sm">
-              <div className="text-3xl font-bold text-brand-primary mb-2">15+</div>
-              <div className="text-text-secondary">Лет в венчурных проектах</div>
-            </div>
-          </div>
-        </section>
-
         {/* CTA Section */}
-        <section className="text-center">
+        <section className="text-center mb-16">
           <div className="max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-brand-primary mb-6">
               Готовы обсудить ваш проект?
@@ -161,31 +119,43 @@ export default function AboutPage(): ReactElement {
               size="lg"
               className="shadow-lg hover:shadow-xl"
             >
-              направить запрос
+              Направить запрос
             </ConsultationButton>
           </div>
         </section>
 
-      </div>
-      
-      {/* Partners Logos - Bottom Section - Full Width */}
-      <section className="mt-8 pt-6 border-t border-gray-200 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h3 className="text-xl font-bold text-brand-primary text-center mb-12">
-            партнеры и клиенты
-          </h3>
+        {/* Partners Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-brand-primary mb-8 text-center">
+            Партнеры и клиенты
+          </h2>
+          <p className="text-xl text-text-secondary max-w-3xl mx-auto text-center mb-8">
+            Доверие ведущих компаний — результат профессионализма и качества работы
+          </p>
+
+          {/* Partners Logos */}
+          <div className="max-w-7xl mx-auto">
           
-          <div className="flex flex-col md:flex-row md:justify-between items-center gap-8 md:gap-4">
+          <div className="flex flex-col md:flex-row md:justify-center items-center gap-8 md:gap-4 flex-wrap">
             {[
-              { id: 'partner1', name: 'Партнер 1', image: '/images/image5.png' },
-              { id: 'partner2', name: 'Партнер 2', image: '/images/image6.png' },
-              { id: 'partner3', name: 'Партнер 3', image: '/images/image7.png' },
-              { id: 'partner4', name: 'Партнер 4', image: '/images/image8.png' },
-              { id: 'partner5', name: 'Партнер 5', image: '/images/image9.png' },
+              { id: 'aircargo', name: 'Air Cargo', image: '/images/AirCargo.png', url: 'https://aircargonetwork.com/' },
+              { id: 'skolkovo', name: 'Сколково', image: '/images/BuySkolkovo.png', url: 'https://skolkovocid.com/about.php' },
+              { id: 'buysocial', name: 'Buy Social', image: '/images/buySocial.png', url: 'https://buysocial.ru/' },
+              { id: 'freedom', name: 'Freedom', image: '/images/freedom.png', url: 'https://freedome.pro/' },
+              { id: 'impactive', name: 'Impactive', image: '/images/impactive.png', url: 'https://impactive.ru/' },
+              { id: 'sprego', name: 'Sprego', image: '/images/Sprego.png', url: 'https://vk.link/sprego' },
+              { id: 'partner1', name: 'Партнер 1', image: '/images/image5.png', url: 'https://freedome.pro/' },
+              { id: 'partner2', name: 'Партнер 2', image: '/images/image6.png', url: 'https://fond-navstrechu.ru/?ysclid=mdmsficr6v303586851' },
+              { id: 'partner3', name: 'Партнер 3', image: '/images/image7.png', url: 'https://zarubezhexpo.ru/ExpoRussiaSerbia/' },
+              { id: 'partner4', name: 'Партнер 4', image: '/images/image8.png', url: 'https://aclasskids.ru/?ysclid=mdmsew56ui616080228' },
+              { id: 'partner5', name: 'Партнер 5', image: '/images/image9.png', url: 'https://impactive.ru/' },
             ].map((partner) => (
-              <div
+              <a
                 key={partner.id}
-                className="group p-4 rounded-lg hover:shadow-md transition-all duration-300 hover:scale-105 w-32 h-32 md:flex-1 md:max-w-[18%] md:w-full md:h-auto"
+                href={partner.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-8 rounded-lg border-2 border-transparent hover:border-brand-primary hover:bg-gray-200 hover:shadow-lg transition-all duration-300 hover:scale-105 w-48 h-48 md:w-48 md:h-48 block"
               >
                 <div className="relative aspect-square w-full h-full">
                   <Image
@@ -196,11 +166,13 @@ export default function AboutPage(): ReactElement {
                     sizes="(max-width: 768px) 128px, 15vw"
                   />
                 </div>
-              </div>
+              </a>
             ))}
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+
+      </div>
       </main>
     </div>
   );

@@ -54,12 +54,12 @@ export default function TrainingDetailsPage(): ReactElement {
 
         {/* Image Section */}
         <section className="mb-16 text-center">
-          <div className="relative w-full max-w-2xl mx-auto">
+          <div className="relative w-full max-w-md mx-auto">
             <Image
               src="/images/image13.jpg"
               alt="Обучение финансовому моделированию"
-              width={800}
-              height={400}
+              width={400}
+              height={200}
               className="rounded-2xl shadow-lg w-full h-auto"
             />
           </div>
@@ -109,12 +109,12 @@ export default function TrainingDetailsPage(): ReactElement {
               
               {/* Online Course Image */}
               <div className="mb-6 text-center">
-                <div className="relative w-full max-w-lg mx-auto">
+                <div className="relative w-full max-w-sm mx-auto">
                   <Image
                     src="/images/image14.jpg"
                     alt="Онлайн-курс на платформе Stepik"
-                    width={600}
-                    height={300}
+                    width={400}
+                    height={200}
                     className="rounded-xl shadow-md w-full h-auto"
                   />
                 </div>
@@ -165,12 +165,12 @@ export default function TrainingDetailsPage(): ReactElement {
               
               {/* Group Workshop Image */}
               <div className="mb-6 text-center">
-                <div className="relative w-full max-w-lg mx-auto">
+                <div className="relative w-full max-w-sm mx-auto">
                   <Image
                     src="/images/image15.jpg"
                     alt="Групповой воркшоп по финансовому моделированию"
-                    width={600}
-                    height={300}
+                    width={400}
+                    height={200}
                     className="rounded-xl shadow-md w-full h-auto"
                   />
                 </div>
@@ -211,12 +211,12 @@ export default function TrainingDetailsPage(): ReactElement {
               
               {/* Educational Programs Image */}
               <div className="mb-6 text-center">
-                <div className="relative w-full max-w-lg mx-auto">
+                <div className="relative w-full max-w-sm mx-auto">
                   <Image
                     src="/images/image16.jpg"
                     alt="Образовательные программы и курсы под ключ"
-                    width={600}
-                    height={300}
+                    width={400}
+                    height={200}
                     className="rounded-xl shadow-md w-full h-auto"
                   />
                 </div>
@@ -299,7 +299,7 @@ export default function TrainingDetailsPage(): ReactElement {
         {/* Блок 6: Призыв к действию */}
         <section className="text-center">
           <div className="bg-white rounded-2xl p-8 shadow-sm max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold text-brand-primary mb-6">
+            <h3 className="text-2xl font-bold text-brand-accent mb-6">
               Финансовая модель - колоссальный внутренний ресурс для развития бизнеса. 
               Хочешь научиться ее создавать и использовать?
             </h3>

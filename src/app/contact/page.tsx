@@ -70,29 +70,29 @@ export default function ContactPage(): ReactElement {
     <div className="min-h-screen">
       <Navigation />
       
-      {/* Main contact section with accent background */}
-      <main className="min-h-screen" style={{ backgroundColor: '#355C7D' }}>
+      {/* Main contact section with light background */}
+      <main className="min-h-screen" style={{ backgroundColor: '#FAF6F5' }}>
         <div className="max-w-4xl mx-auto px-4 py-16">
           {/* Hero Section */}
           <section className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-brand-primary mb-6">
               Контактный блок
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto">
               Готовы обсудить ваш проект? Свяжитесь со мной удобным способом
             </p>
           </section>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Contact Form */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-              <h2 className="text-2xl font-bold text-white mb-6">
+            <div className="bg-white rounded-2xl p-8 shadow-sm">
+              <h2 className="text-2xl font-bold text-brand-primary mb-6">
                 Оставить заявку
               </h2>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-white/90 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-text-primary mb-2">
                     Имя *
                   </label>
                   <Input
@@ -102,13 +102,13 @@ export default function ContactPage(): ReactElement {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="bg-white/20 border-white/30 text-white placeholder-white/60 focus:border-white focus:ring-white"
+                    className="bg-white border-gray-300 text-text-primary placeholder-gray-500 focus:border-brand-primary focus:ring-brand-primary"
                     placeholder="Введите ваше имя"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-white/90 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-text-primary mb-2">
                     Email *
                   </label>
                   <Input
@@ -118,13 +118,13 @@ export default function ContactPage(): ReactElement {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="bg-white/20 border-white/30 text-white placeholder-white/60 focus:border-white focus:ring-white"
+                    className="bg-white border-gray-300 text-text-primary placeholder-gray-500 focus:border-brand-primary focus:ring-brand-primary"
                     placeholder="Введите ваш email"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-white/90 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-text-primary mb-2">
                     Запрос *
                   </label>
                   <Textarea
@@ -134,7 +134,7 @@ export default function ContactPage(): ReactElement {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="bg-white/20 border-white/30 text-white placeholder-white/60 focus:border-white focus:ring-white resize-none"
+                    className="bg-white border-gray-300 text-text-primary placeholder-gray-500 focus:border-brand-primary focus:ring-brand-primary resize-none"
                     placeholder="Опишите ваш запрос или задачу"
                   />
                 </div>
@@ -143,7 +143,7 @@ export default function ContactPage(): ReactElement {
                   type="submit"
                   disabled={isSubmitting}
                   loading={isSubmitting}
-                  className="w-full bg-white text-brand-primary hover:bg-white/90 font-semibold py-3"
+                  className="w-full bg-brand-primary text-white hover:bg-brand-primary-hover font-semibold py-3"
                   size="lg"
                 >
                   {isSubmitting ? 'Отправка...' : 'Оставить заявку'}
@@ -154,8 +154,8 @@ export default function ContactPage(): ReactElement {
             {/* Social Links and Contact Info */}
             <div className="space-y-8">
               {/* Social Media Icons */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-2xl font-bold text-white mb-6">
+              <div className="bg-white rounded-2xl p-8 shadow-sm">
+                <h3 className="text-2xl font-bold text-brand-primary mb-6">
                   QR-коды для быстрого доступа
                 </h3>
                 
@@ -166,7 +166,7 @@ export default function ContactPage(): ReactElement {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-4 p-4 bg-white/10 rounded-xl hover:bg-white/20 transition-all duration-200 group"
+                      className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-200 group"
                     >
                       <div className="relative w-20 h-20 flex-shrink-0">
                         <Image
@@ -177,13 +177,13 @@ export default function ContactPage(): ReactElement {
                         />
                       </div>
                       <div>
-                        <div className="text-white font-semibold text-lg">
+                        <div className="text-text-primary font-semibold text-lg">
                           {social.name}
                         </div>
-                        <div className="text-white/70 text-sm">
+                        <div className="text-text-secondary text-sm">
                           Отсканируйте QR-код
                         </div>
-                        <div className="text-white/60 text-xs mt-1">
+                        <div className="text-text-secondary text-xs mt-1">
                           {social.url.replace('https://', '').replace('mailto:', '')}
                         </div>
                       </div>
@@ -193,39 +193,39 @@ export default function ContactPage(): ReactElement {
               </div>
 
               {/* Additional Contact Info */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-2xl font-bold text-white mb-6">
+              <div className="bg-white rounded-2xl p-8 shadow-sm">
+                <h3 className="text-2xl font-bold text-brand-primary mb-6">
                   Прямой контакт
                 </h3>
                 
-                <div className="space-y-4 text-white/90">
+                <div className="space-y-4 text-text-secondary">
                   <div>
-                    <div className="font-semibold text-white">Email</div>
+                    <div className="font-semibold text-text-primary">Email</div>
                     <a 
                       href="mailto:finmodelguru@gmail.com"
-                      className="hover:text-white transition-colors"
+                      className="hover:text-brand-primary transition-colors"
                     >
                       finmodelguru@gmail.com
                     </a>
                   </div>
                   
                   <div>
-                    <div className="font-semibold text-white">Телефон</div>
+                    <div className="font-semibold text-text-primary">Телефон</div>
                     <a 
                       href="tel:+79262240270"
-                      className="hover:text-white transition-colors"
+                      className="hover:text-brand-primary transition-colors"
                     >
                       +7 926 2240270
                     </a>
                   </div>
                   
                   <div>
-                    <div className="font-semibold text-white">Telegram</div>
+                    <div className="font-semibold text-text-primary">Telegram</div>
                     <a 
                       href="https://t.me/FinModelGuru"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-white transition-colors"
+                      className="hover:text-brand-primary transition-colors"
                     >
                       @FinModelGuru
                     </a>
@@ -237,11 +237,11 @@ export default function ContactPage(): ReactElement {
 
           {/* Call to Action */}
           <section className="text-center mt-16">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-white mb-4">
+            <div className="bg-white rounded-2xl p-8 shadow-sm max-w-2xl mx-auto">
+              <h3 className="text-2xl font-bold text-brand-primary mb-4">
                 Давайте работать вместе
               </h3>
-              <p className="text-white/90 text-lg">
+              <p className="text-text-secondary text-lg">
                 Расскажите о вашей задаче, и мы найдем оптимальное решение. 
                 Первая консультация поможет понять, как я могу быть полезна вашему бизнесу.
               </p>

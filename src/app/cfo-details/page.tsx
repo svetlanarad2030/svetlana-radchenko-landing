@@ -96,12 +96,12 @@ export default function CfoDetailsPage(): ReactElement {
 
         {/* Image Section */}
         <section className="mb-16 text-center">
-          <div className="relative w-full max-w-2xl mx-auto">
+          <div className="relative w-full max-w-md mx-auto">
             <Image
               src="/images/image18.jpeg"
               alt="Финансовый директор на аутсорсе и сопровождение сделок"
-              width={800}
-              height={400}
+              width={400}
+              height={200}
               className="rounded-2xl shadow-lg w-full h-auto"
             />
           </div>
@@ -212,7 +212,7 @@ export default function CfoDetailsPage(): ReactElement {
         {/* Блок 6: CTA */}
         <section className="text-center">
           <div className="bg-white rounded-2xl p-8 shadow-sm max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold text-brand-primary mb-6">
+            <h3 className="text-2xl font-bold text-brand-accent mb-6">
               Вам нужен грамотный CFO?
             </h3>
             
