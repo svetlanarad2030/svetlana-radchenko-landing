@@ -21,7 +21,6 @@ export default function CfoDetailsPage(): ReactElement {
   const services = [
     {
       id: 'cfo-outsource',
-      icon: '📊',
       title: 'Финансовый директор на аутсорсе',
       subtitle: 'Создадим систему финансового управления и систему мониторинга финансовых результатов.',
       items: [
@@ -35,7 +34,6 @@ export default function CfoDetailsPage(): ReactElement {
     },
     {
       id: 'ma-support',
-      icon: '🤝',
       title: 'Сопровождение инвестиционных сделок / M&A',
       subtitle: 'Ваш представитель и стратегический партнёр в сделке.',
       items: [
@@ -48,7 +46,6 @@ export default function CfoDetailsPage(): ReactElement {
     },
     {
       id: 'independent-director',
-      icon: '🧩',
       title: 'Независимый директор / Член экспертных и консультативных советов',
       subtitle: 'Усиливаю управленческую команду независимым взглядом и опытом, найдем баланс между ростом, рисками и устойчивостью.',
       items: [
@@ -128,16 +125,13 @@ export default function CfoDetailsPage(): ReactElement {
           <div className="space-y-8">
             {services.map((service) => (
               <div key={service.id} className="bg-white rounded-2xl p-8 shadow-sm">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="text-3xl">{service.icon}</div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-brand-primary mb-2">
-                      {service.title}
-                    </h3>
-                    <p className="text-lg text-text-secondary mb-4">
-                      {service.subtitle}
-                    </p>
-                  </div>
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-brand-primary mb-2">
+                    {service.title}
+                  </h3>
+                  <p className="text-lg text-text-secondary mb-4">
+                    {service.subtitle}
+                  </p>
                 </div>
                 
                 <div className="space-y-4">

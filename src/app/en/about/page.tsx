@@ -144,30 +144,47 @@ export default function EnglishAboutPage(): ReactElement {
               { id: 'freedom', name: 'Freedom', image: '/images/freedom.png', url: 'https://freedome.pro/' },
               { id: 'impactive', name: 'Impactive', image: '/images/impactive.png', url: 'https://impactive.ru/' },
               { id: 'sprego', name: 'Sprego', image: '/images/Sprego.png', url: 'https://vk.link/sprego' },
-              { id: 'partner1', name: 'Partner 1', image: '/images/image5.png', url: 'https://freedome.pro/' },
-              { id: 'partner2', name: 'Partner 2', image: '/images/image6.png', url: 'https://fond-navstrechu.ru/?ysclid=mdmsficr6v303586851' },
-              { id: 'partner3', name: 'Partner 3', image: '/images/image7.png', url: 'https://zarubezhexpo.ru/ExpoRussiaSerbia/' },
-              { id: 'partner4', name: 'Partner 4', image: '/images/image8.png', url: 'https://aclasskids.ru/?ysclid=mdmsew56ui616080228' },
-              { id: 'partner5', name: 'Partner 5', image: '/images/image9.png', url: 'https://impactive.ru/' },
-            ].map((partner) => (
-              <a
-                key={partner.id}
-                href={partner.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-8 rounded-lg border-2 border-transparent hover:border-brand-primary hover:bg-gray-200 hover:shadow-lg transition-all duration-300 hover:scale-105 w-48 h-48 md:w-48 md:h-48 block"
-              >
+              { id: 'navstrechu', name: 'Towards Change', image: '/images/navstrechu.png', url: 'https://fond-navstrechu.ru/?ysclid=mdmsficr6v303586851' },
+              { id: 'exporussiaserbia', name: 'ExpoRussiaSerbia', image: '/images/ExpoRussiaSerbia.png', url: 'https://zarubezhexpo.ru/ExpoRussiaSerbia/' },
+              { id: 'classkids', name: 'AClassKids', image: '/images/classkids.png', url: 'https://aclasskids.ru/?ysclid=mdmsew56ui616080228' },
+              { id: 'exporussia', name: 'Zarubezhexpo', image: '/images/expoRussia.png', url: 'https://zarubezhexpo.ru/' },
+              { id: 'partner5', name: 'Partner 5', image: '/images/image9.png' },
+            ].map((partner) => {
+              const content = (
                 <div className="relative aspect-square w-full h-full">
                   <Image
                     src={partner.image}
                     alt={partner.name}
                     fill
-                    className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                    className="object-contain transition-all duration-300"
                     sizes="(max-width: 768px) 128px, 15vw"
                   />
                 </div>
-              </a>
-            ))}
+              );
+              
+              if (partner.url) {
+                return (
+                  <a
+                    key={partner.id}
+                    href={partner.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group p-8 rounded-lg border-2 border-transparent hover:border-brand-primary hover:bg-gray-200 hover:shadow-lg transition-all duration-300 hover:scale-105 w-48 h-48 md:w-48 md:h-48 block"
+                  >
+                    {content}
+                  </a>
+                );
+              } else {
+                return (
+                  <div
+                    key={partner.id}
+                    className="p-8 rounded-lg border-2 border-transparent w-48 h-48 md:w-48 md:h-48 block"
+                  >
+                    {content}
+                  </div>
+                );
+              }
+            })}
           </div>
           </div>
         </section>

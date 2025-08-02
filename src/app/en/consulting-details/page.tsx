@@ -21,7 +21,6 @@ export default function EnglishConsultingDetailsPage(): ReactElement {
   const services = [
     {
       id: 'modeling',
-      icon: '🧩',
       title: '1. Financial Modeling',
       items: [
         'Building a model from scratch according to Client\'s request with necessary detail and analytics',
@@ -32,7 +31,6 @@ export default function EnglishConsultingDetailsPage(): ReactElement {
     },
     {
       id: 'audit',
-      icon: '🔍',
       title: '2. Financial Model Audit',
       items: [
         'Checking the logic of the financial model and validity of assumptions',
@@ -43,7 +41,6 @@ export default function EnglishConsultingDetailsPage(): ReactElement {
     },
     {
       id: 'planning',
-      icon: '🗂',
       title: '3. Business Planning',
       items: [
         'Preparation of a complete business plan for the Project',
@@ -54,7 +51,6 @@ export default function EnglishConsultingDetailsPage(): ReactElement {
     },
     {
       id: 'investments',
-      icon: '🤝',
       title: '4. Investment / M&A Preparation',
       items: [
         'Help in packaging the Project: financial model, presentation structure, pitch',
@@ -65,7 +61,6 @@ export default function EnglishConsultingDetailsPage(): ReactElement {
     },
     {
       id: 'mentoring',
-      icon: '💬',
       title: '5. Mentoring',
       items: [
         '1:1. Business conversation — and to the point.',
@@ -136,13 +131,10 @@ export default function EnglishConsultingDetailsPage(): ReactElement {
           <div className="space-y-8">
             {services.map((service) => (
               <div key={service.id} className="bg-white rounded-2xl p-8 shadow-sm">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="text-3xl">{service.icon}</div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-brand-primary mb-4">
-                      {service.title}
-                    </h3>
-                  </div>
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-brand-primary mb-4">
+                    {service.title}
+                  </h3>
                 </div>
                 
                 <div className="space-y-4">

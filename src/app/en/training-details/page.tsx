@@ -98,13 +98,10 @@ export default function EnglishTrainingDetailsPage(): ReactElement {
           <div className="space-y-8">
             {/* Online Course */}
             <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="text-3xl">🎥</div>
-                <div>
-                  <h3 className="text-2xl font-bold text-brand-primary mb-2">
-                    Online Workshop Course &quot;5 Steps to Financial Model&quot; on Stepik.org platform
-                  </h3>
-                </div>
+              <div className="mb-6">
+                <h3 className="text-2xl font-bold text-brand-primary mb-2">
+                  Online Workshop Course &quot;5 Steps to Financial Model&quot; on Stepik.org platform
+                </h3>
               </div>
               
               {/* Online Course Image */}
@@ -154,13 +151,10 @@ export default function EnglishTrainingDetailsPage(): ReactElement {
 
             {/* Group Workshop */}
             <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="text-3xl">👥</div>
-                <div>
-                  <h3 className="text-2xl font-bold text-brand-primary mb-2">
-                    Group Workshop (online / offline)
-                  </h3>
-                </div>
+              <div className="mb-6">
+                <h3 className="text-2xl font-bold text-brand-primary mb-2">
+                  Group Workshop (online / offline)
+                </h3>
               </div>
               
               {/* Group Workshop Image */}
@@ -200,13 +194,10 @@ export default function EnglishTrainingDetailsPage(): ReactElement {
 
             {/* Educational Programs */}
             <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <div className="flex items-start gap-4 mb-6">
-                <div className="text-3xl">🏫</div>
-                <div>
-                  <h3 className="text-2xl font-bold text-brand-primary mb-2">
-                    Educational Programs (RU/EN)
-                  </h3>
-                </div>
+              <div className="mb-6">
+                <h3 className="text-2xl font-bold text-brand-primary mb-2">
+                  Educational Programs (RU/EN)
+                </h3>
               </div>
               
               {/* Educational Programs Image */}

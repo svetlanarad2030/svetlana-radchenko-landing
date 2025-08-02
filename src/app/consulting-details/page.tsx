@@ -21,7 +21,6 @@ export default function ConsultingDetailsPage(): ReactElement {
   const services = [
     {
       id: 'modeling',
-      icon: '🧩',
       title: '1. Финансовое моделирование',
       items: [
         'Построение модели с нуля под запрос Клиента с необходимой детализацией и аналитикой',
@@ -32,7 +31,6 @@ export default function ConsultingDetailsPage(): ReactElement {
     },
     {
       id: 'audit',
-      icon: '🔍',
       title: '2. Аудит финансовой модели',
       items: [
         'Проверка логики финансовой модели и обоснованности допущений',
@@ -43,7 +41,6 @@ export default function ConsultingDetailsPage(): ReactElement {
     },
     {
       id: 'planning',
-      icon: '🗂',
       title: '3. Бизнес-планирование',
       items: [
         'Подготовка полноценного бизнес-плана Проекта',
@@ -54,7 +51,6 @@ export default function ConsultingDetailsPage(): ReactElement {
     },
     {
       id: 'investments',
-      icon: '🤝',
       title: '4. Подготовка к инвестициям / M&A',
       items: [
         'Помощь в упаковке Проекта: финансовая модель, структура презентации, питч',
@@ -65,7 +61,6 @@ export default function ConsultingDetailsPage(): ReactElement {
     },
     {
       id: 'mentoring',
-      icon: '💬',
       title: '5. Менторинг',
       items: [
         '1:1. Разговор по делу — и по сути.',
@@ -136,13 +131,10 @@ export default function ConsultingDetailsPage(): ReactElement {
           <div className="space-y-8">
             {services.map((service) => (
               <div key={service.id} className="bg-white rounded-2xl p-8 shadow-sm">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="text-3xl">{service.icon}</div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-brand-primary mb-4">
-                      {service.title}
-                    </h3>
-                  </div>
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-brand-primary mb-4">
+                    {service.title}
+                  </h3>
                 </div>
                 
                 <div className="space-y-4">
