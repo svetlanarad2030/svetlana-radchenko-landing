@@ -40,6 +40,10 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://svetlana-radchenko.ru'),
   alternates: {
     canonical: '/',
+    languages: {
+      'ru': '/',
+      'en': '/en'
+    }
   },
   openGraph: {
     title: 'Светлана Радченко - Эксперт в сфере финансов и стратегии',
