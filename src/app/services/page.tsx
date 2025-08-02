@@ -7,7 +7,6 @@ import { ReactElement } from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Navigation } from '@/components/navigation/Navigation';
-import { ConsultationButton } from '@/components/forms/ConsultationButton';
 
 export const metadata: Metadata = {
   title: 'Услуги | Светлана Радченко',

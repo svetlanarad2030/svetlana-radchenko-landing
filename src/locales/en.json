@@ -1,0 +1,87 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Me & How I Can Help",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Svetlana Radchenko",
+    "roles": {
+      "expert": "Strategy & Finance Expert",
+      "teacher": "Educator",
+      "mentor": "Mentor"
+    },
+    "description": "I help see business in numbers, find growth points and move towards goals. I work at the intersection of analytics and empathy: I analyze business as a system and help make smart, precise decisions.",
+    "cta": "Send Request"
+  },
+  "footer": {
+    "email": "FinModelGuru@gmail.com",
+    "whatsapp": "WhatsApp",
+    "telegram": "@FinModelGuru",
+    "copyright": "© FinModelGuru 2025"
+  },
+  "about": {
+    "title": "About Me & How I Can Help",
+    "intro": "Finance practitioner with 26+ years of experience in financial management and project development. Ex-CFO of Bioprocess Group and Irish public company Ovoca Bio plc, PhD in Economics, mentor, lecturer and expert at the 'Towards Change' foundation. Consultant for accelerators, universities, international programs and moderator of events at Zarubezhexpo.",
+    "facts": {
+      "title": "Facts backed by experience, depth and approach",
+      "experience": "26+ years of finance experience",
+      "experienceDesc": "Systematic vision and maturity in financial management",
+      "projects": "100+ completed projects",
+      "projectsDesc": "Proven expertise and practical results",
+      "approach": "Boutique approach",
+      "approachDesc": "Personal involvement, individual solutions, small team of experts"
+    },
+    "cta": {
+      "title": "Ready to discuss your project?",
+      "description": "Tell me about your business challenges, and I'll help find optimal solutions",
+      "button": "Send Request"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Three areas of work for your business development",
+    "training": {
+      "title": "1. Training",
+      "subtitle": "Making complex things understandable"
+    },
+    "consulting": {
+      "title": "2. Financial Consulting & Mentoring",
+      "subtitle": "Diving into the essence of business and providing support for growth"
+    },
+    "cfo": {
+      "title": "3. Independent Director / Chief Financial Officer",
+      "subtitle": "CFO as owner's partner. I'll build financial architecture of the business and help implement effective deals"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Ready to discuss your project? Contact me in a convenient way",
+    "form": {
+      "title": "Submit Request",
+      "name": "Name",
+      "email": "Email",
+      "message": "Request",
+      "namePlaceholder": "Enter your name",
+      "emailPlaceholder": "Enter your email",
+      "messagePlaceholder": "Describe your request or task",
+      "submit": "Submit Request",
+      "submitting": "Submitting..."
+    },
+    "qr": {
+      "title": "QR codes for quick access",
+      "scanText": "Scan QR code"
+    },
+    "direct": {
+      "title": "Direct Contact",
+      "email": "Email",
+      "phone": "Phone",
+      "telegram": "Telegram"
+    },
+    "cta": {
+      "title": "Let's work together",
+      "description": "Tell me about your task, and we'll find the optimal solution. The first consultation will help understand how I can be useful to your business."
+    }
+  }
+}

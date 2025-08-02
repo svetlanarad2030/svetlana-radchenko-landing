@@ -3,10 +3,13 @@
  * @module components/sections/HeroSection
  */
 
+'use client';
+
 import { ReactElement } from 'react';
 import Image from 'next/image';
 import { ConsultationButton } from '@/components/forms/ConsultationButton';
 import { cn } from '@/lib/utils';
+import { useTranslation } from '@/hooks/useTranslation';
 
 export interface HeroSectionProps {
   /** Additional CSS classes */
@@ -26,6 +29,8 @@ export interface HeroSectionProps {
  * ```
  */
 export function HeroSection({ className }: HeroSectionProps): ReactElement {
+  const { t } = useTranslation();
+  
   return (
     <section className={cn(
       'min-h-[70vh] flex items-center justify-center px-4 py-16 bg-bg-primary',
@@ -36,19 +41,18 @@ export function HeroSection({ className }: HeroSectionProps): ReactElement {
           {/* Text content - Order 2 on mobile, Order 1 on desktop */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-primary mb-4 leading-tight">
-              Светлана Радченко
+              {t('hero.name')}
             </h1>
             
             <p className="text-xl md:text-2xl text-text-primary mb-6 font-medium">
-              Эксперт по стратегии и финансам<br />
-              Преподаватель<br />
-              Ментор
+              {t('hero.roles.expert')}<br />
+              {t('hero.roles.teacher')}<br />
+              {t('hero.roles.mentor')}
             </p>
             
             <div className="space-y-4 mb-8">
               <p className="text-base md:text-lg text-text-secondary max-w-xl mx-auto lg:mx-0">
-                Помогаю увидеть бизнес в цифрах, найти точки роста и двигаться к цели. 
-                Работаю на стыке аналитики и эмпатии: разбираю бизнес как систему и помогаю принимать разумные, точные решения.
+                {t('hero.description')}
               </p>
             </div>
             
@@ -59,7 +63,7 @@ export function HeroSection({ className }: HeroSectionProps): ReactElement {
                 size="lg"
                 className="shadow-lg hover:shadow-xl"
               >
-                Направить запрос
+                {t('hero.cta')}
               </ConsultationButton>
             </div>
           </div>
