@@ -52,39 +52,42 @@ export default function TrainingDetailsPage(): ReactElement {
           </p>
         </section>
 
-        {/* Image Section */}
-        <section className="mb-16 text-center">
-          <div className="relative w-full max-w-md mx-auto">
-            <Image
-              src="/images/image13.jpg"
-              alt="Обучение финансовому моделированию"
-              width={400}
-              height={200}
-              className="rounded-2xl shadow-lg w-full h-auto"
-            />
-          </div>
-        </section>
-
-        {/* Блок 2: Введение */}
+        {/* Блок 2: Введение с изображением */}
         <section className="mb-16">
           <div className="bg-white rounded-2xl p-8 shadow-sm">
-            <div className="space-y-6 text-text-primary">
-              <p className="text-lg leading-relaxed">
-                Мои курсы и воркшопы — это не теория «про цифры». Это маршрут, пройдя который, 
-                участники смогут увидеть бизнес целиком, понять, как интерпретируются результаты 
-                и выстраиваются финансовые приоритеты.
-              </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              {/* Text on the left */}
+              <div className="space-y-6 text-text-primary">
+                <p className="text-lg leading-relaxed">
+                  Мои курсы и воркшопы — это не теория «про цифры». Это маршрут, пройдя который, 
+                  участники смогут увидеть бизнес целиком, понять, как интерпретируются результаты 
+                  и выстраиваются финансовые приоритеты.
+                </p>
+                
+                <p className="text-lg leading-relaxed">
+                  Цель курса - совместно пройти по полному алгоритму построения финансовой модели, 
+                  научиться строить самостоятельно для любого проекта, понимая логику и внутренние связи, 
+                  видеть ключевые результаты и уметь пользоваться сценарным анализом.
+                </p>
+                
+                <p className="text-lg leading-relaxed">
+                  Обучение подходит как для тех, кто только начинает, так и для опытных команд — 
+                  когда нужно структурировать знания, собрать модель или подготовиться к росту.
+                </p>
+              </div>
               
-              <p className="text-lg leading-relaxed">
-                Цель курса - совместно пройти по полному алгоритму построения финансовой модели, 
-                научиться строить самостоятельно для любого проекта, понимая логику и внутренние связи, 
-                видеть ключевые результаты и уметь пользоваться сценарным анализом.
-              </p>
-              
-              <p className="text-lg leading-relaxed">
-                Обучение подходит как для тех, кто только начинает, так и для опытных команд — 
-                когда нужно структурировать знания, собрать модель или подготовиться к росту.
-              </p>
+              {/* Image on the right */}
+              <div className="flex justify-center lg:justify-end">
+                <div className="relative w-full max-w-md">
+                  <Image
+                    src="/images/image13.jpg"
+                    alt="Обучение финансовому моделированию"
+                    width={400}
+                    height={200}
+                    className="rounded-2xl shadow-lg w-full h-auto"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -104,49 +107,52 @@ export default function TrainingDetailsPage(): ReactElement {
                 </h3>
               </div>
               
-              {/* Online Course Image */}
-              <div className="mb-6 text-center">
-                <div className="relative w-full max-w-sm mx-auto">
-                  <Image
-                    src="/images/image14.jpg"
-                    alt="Онлайн-курс на платформе Stepik"
-                    width={400}
-                    height={200}
-                    className="rounded-xl shadow-md w-full h-auto"
-                  />
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                {/* Image on the left */}
+                <div className="flex justify-center lg:justify-start">
+                  <div className="relative w-full max-w-sm">
+                    <Image
+                      src="/images/image14.jpg"
+                      alt="Онлайн-курс на платформе Stepik"
+                      width={400}
+                      height={200}
+                      className="rounded-xl shadow-md w-full h-auto"
+                    />
+                  </div>
+                </div>
+                
+                {/* Text and button on the right */}
+                <div className="space-y-4">
+                  <ul className="space-y-2 text-text-primary">
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-primary">•</span>
+                      Видео-уроки, проверочные вопросы, домашние задания
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-primary">•</span>
+                      Пошаговая методика
+                    </li>
+                  </ul>
+                  
+                  <p className="text-text-secondary">
+                    Вы разберетесь, как правильно оцифровывать бизнес или проект и разрабатывать гибкие финансовые модели.
+                    Вы поймете подход к построению финансовой модели, что позволит вам сделать расчеты для любой новой идеи.
+                  </p>
+                  
+                  <p className="text-brand-primary font-medium">
+                    💡 Можно пройти в своём темпе. Итог — собственная рабочая модель.
+                  </p>
+                  
+                  <a
+                    href="https://stepik.org/193124"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-brand-primary rounded-lg hover:bg-brand-primary-hover transition-colors duration-200"
+                  >
+                    Перейти на курс Stepik.org
+                  </a>
                 </div>
               </div>
-              
-              <div className="space-y-4 mb-6">
-                <ul className="space-y-2 text-text-primary">
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-primary">•</span>
-                    Видео-уроки, проверочные вопросы, домашние задания
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-primary">•</span>
-                    Пошаговая методика
-                  </li>
-                </ul>
-                
-                <p className="text-text-secondary">
-                  Вы разберетесь, как правильно оцифровывать бизнес или проект и разрабатывать гибкие финансовые модели.
-                  Вы поймете подход к построению финансовой модели, что позволит вам сделать расчеты для любой новой идеи.
-                </p>
-                
-                <p className="text-brand-primary font-medium">
-                  💡 Можно пройти в своём темпе. Итог — собственная рабочая модель.
-                </p>
-              </div>
-              
-              <a
-                href="https://stepik.org/193124"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-brand-primary rounded-lg hover:bg-brand-primary-hover transition-colors duration-200"
-              >
-                Перейти на курс Stepik.org
-              </a>
             </div>
 
             {/* Групповой воркшоп */}
@@ -157,38 +163,41 @@ export default function TrainingDetailsPage(): ReactElement {
                 </h3>
               </div>
               
-              {/* Group Workshop Image */}
-              <div className="mb-6 text-center">
-                <div className="relative w-full max-w-sm mx-auto">
-                  <Image
-                    src="/images/image15.jpg"
-                    alt="Групповой воркшоп по финансовому моделированию"
-                    width={400}
-                    height={200}
-                    className="rounded-xl shadow-md w-full h-auto"
-                  />
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                {/* Text on the left */}
+                <div className="space-y-4">
+                  <ul className="space-y-2 text-text-primary">
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-primary">•</span>
+                      Живое обучение в малых группах
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-primary">•</span>
+                      Практика на своих проектах
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-primary">•</span>
+                      Обратная связь и поддержка
+                    </li>
+                  </ul>
+                  
+                  <p className="text-brand-primary font-medium">
+                    💡 Проводится при наборе группы. Можно оставить заявку.
+                  </p>
                 </div>
-              </div>
-              
-              <div className="space-y-4">
-                <ul className="space-y-2 text-text-primary">
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-primary">•</span>
-                    Живое обучение в малых группах
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-primary">•</span>
-                    Практика на своих проектах
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-primary">•</span>
-                    Обратная связь и поддержка
-                  </li>
-                </ul>
                 
-                <p className="text-brand-primary font-medium">
-                  💡 Проводится при наборе группы. Можно оставить заявку.
-                </p>
+                {/* Image on the right */}
+                <div className="flex justify-center lg:justify-end">
+                  <div className="relative w-full max-w-md">
+                    <Image
+                      src="/images/image15.jpg"
+                      alt="Групповой воркшоп по финансовому моделированию"
+                      width={400}
+                      height={200}
+                      className="rounded-xl shadow-md w-full h-auto"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -200,34 +209,37 @@ export default function TrainingDetailsPage(): ReactElement {
                 </h3>
               </div>
               
-              {/* Educational Programs Image */}
-              <div className="mb-6 text-center">
-                <div className="relative w-full max-w-sm mx-auto">
-                  <Image
-                    src="/images/image16.jpg"
-                    alt="Образовательные программы и курсы под ключ"
-                    width={400}
-                    height={200}
-                    className="rounded-xl shadow-md w-full h-auto"
-                  />
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                {/* Image on the left */}
+                <div className="flex justify-center lg:justify-start">
+                  <div className="relative w-full max-w-md">
+                    <Image
+                      src="/images/image16.jpg"
+                      alt="Образовательные программы и курсы под ключ"
+                      width={400}
+                      height={200}
+                      className="rounded-xl shadow-md w-full h-auto"
+                    />
+                  </div>
                 </div>
-              </div>
-              
-              <div className="space-y-4">
-                <ul className="space-y-2 text-text-primary">
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-primary">•</span>
-                    Подготовка курсов под ключ (для акселераторов, вузов, проектов)
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-primary">•</span>
-                    На русском и английском
-                  </li>
-                </ul>
                 
-                <p className="text-brand-primary font-medium">
-                  💡 Есть опыт с EMBA, акселераторами, impact-платформами.
-                </p>
+                {/* Text on the right */}
+                <div className="space-y-4">
+                  <ul className="space-y-2 text-text-primary">
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-primary">•</span>
+                      Подготовка курсов под ключ (для акселераторов, вузов, проектов)
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-primary">•</span>
+                      На русском и английском
+                    </li>
+                  </ul>
+                  
+                  <p className="text-brand-primary font-medium">
+                    💡 Есть опыт с EMBA, акселераторами, impact-платформами.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

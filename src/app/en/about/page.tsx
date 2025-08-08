@@ -129,20 +129,17 @@ export default function EnglishAboutPage(): ReactElement {
           <h2 className="text-3xl font-bold text-brand-primary mb-8 text-center">
             Partners and Clients
           </h2>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto text-center mb-12">
-            Trust of leading companies — result of professionalism and quality work
-          </p>
 
           {/* Partners Logos */}
           <div className="max-w-7xl mx-auto">
           
           <div className="flex flex-col md:flex-row md:justify-center items-center gap-8 md:gap-4 flex-wrap">
             {[
-              { id: 'aircargo', name: 'Air Cargo', image: '/images/AirCargo.png', url: 'https://aircargonetwork.com/' },
+              { id: 'aircargo', name: 'Air Cargo', image: '/images/air_cargo_color.png', url: 'https://aircargonetwork.com/' },
               { id: 'skolkovo', name: 'Skolkovo', image: '/images/BuySkolkovo.png', url: 'https://skolkovocid.com/about.php' },
               { id: 'buysocial', name: 'Buy Social', image: '/images/buySocial.png', url: 'https://buysocial.ru/' },
-              { id: 'freedom', name: 'Freedom', image: '/images/freedom.png', url: 'https://freedome.pro/' },
-              { id: 'impactive', name: 'Impactive', image: '/images/impactive.png', url: 'https://impactive.ru/' },
+              { id: 'freedom', name: 'Freedom', image: '/images/freedome_color.png', url: 'https://freedome.pro/' },
+              { id: 'impactive', name: 'Impactive', image: '/images/impactive_color.png', url: 'https://impactive.ru/' },
               { id: 'sprego', name: 'Sprego', image: '/images/Sprego.png', url: 'https://vk.link/sprego' },
               { id: 'navstrechu', name: 'Towards Change', image: '/images/navstrechu.png', url: 'https://fond-navstrechu.ru/?ysclid=mdmsficr6v303586851' },
               { id: 'exporussiaserbia', name: 'ExpoRussiaSerbia', image: '/images/ExpoRussiaSerbia.png', url: 'https://zarubezhexpo.ru/ExpoRussiaSerbia/' },

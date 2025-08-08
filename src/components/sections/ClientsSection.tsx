@@ -88,7 +88,7 @@ export function ClientsSection({ className }: ClientsSectionProps): ReactElement
             Клиенты и партнеры
           </h2>
           <p className="text-lg md:text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
-            Доверие ведущих компаний и успешное сотрудничество в различных отраслях
+            Успешное сотрудничество в различных отраслях
           </p>
         </div>
 

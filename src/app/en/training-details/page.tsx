@@ -52,39 +52,42 @@ export default function EnglishTrainingDetailsPage(): ReactElement {
           </p>
         </section>
 
-        {/* Image Section */}
-        <section className="mb-16 text-center">
-          <div className="relative w-full max-w-md mx-auto">
-            <Image
-              src="/images/image13.jpg"
-              alt="Financial modeling training"
-              width={400}
-              height={200}
-              className="rounded-2xl shadow-lg w-full h-auto"
-            />
-          </div>
-        </section>
-
-        {/* Block 2: Introduction */}
+        {/* Block 2: Introduction with Image */}
         <section className="mb-16">
           <div className="bg-white rounded-2xl p-8 shadow-sm">
-            <div className="space-y-6 text-text-primary">
-              <p className="text-lg leading-relaxed">
-                My courses and workshops are not theory &quot;about numbers&quot;. This is a route that, 
-                after completing, participants will be able to see the business as a whole, 
-                understand how results are interpreted and financial priorities are built.
-              </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              {/* Text on the left */}
+              <div className="space-y-6 text-text-primary">
+                <p className="text-lg leading-relaxed">
+                  My courses and workshops are not theory &quot;about numbers&quot;. This is a route that, 
+                  after completing, participants will be able to see the business as a whole, 
+                  understand how results are interpreted and financial priorities are built.
+                </p>
+                
+                <p className="text-lg leading-relaxed">
+                  The goal of the course is to jointly go through the complete algorithm for building 
+                  a financial model, learn to build independently for any project, understanding the 
+                  logic and internal connections, see key results and be able to use scenario analysis.
+                </p>
+                
+                <p className="text-lg leading-relaxed">
+                  The training is suitable for both beginners and experienced teams — when you need 
+                  to structure knowledge, build a model or prepare for growth.
+                </p>
+              </div>
               
-              <p className="text-lg leading-relaxed">
-                The goal of the course is to jointly go through the complete algorithm for building 
-                a financial model, learn to build independently for any project, understanding the 
-                logic and internal connections, see key results and be able to use scenario analysis.
-              </p>
-              
-              <p className="text-lg leading-relaxed">
-                The training is suitable for both beginners and experienced teams — when you need 
-                to structure knowledge, build a model or prepare for growth.
-              </p>
+              {/* Image on the right */}
+              <div className="flex justify-center lg:justify-end">
+                <div className="relative w-full max-w-md">
+                  <Image
+                    src="/images/image13.jpg"
+                    alt="Financial modeling training"
+                    width={400}
+                    height={200}
+                    className="rounded-2xl shadow-lg w-full h-auto"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -104,49 +107,52 @@ export default function EnglishTrainingDetailsPage(): ReactElement {
                 </h3>
               </div>
               
-              {/* Online Course Image */}
-              <div className="mb-6 text-center">
-                <div className="relative w-full max-w-sm mx-auto">
-                  <Image
-                    src="/images/image14.jpg"
-                    alt="Online course on Stepik platform"
-                    width={400}
-                    height={200}
-                    className="rounded-xl shadow-md w-full h-auto"
-                  />
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                {/* Image on the left */}
+                <div className="flex justify-center lg:justify-start">
+                  <div className="relative w-full max-w-sm">
+                    <Image
+                      src="/images/image14.jpg"
+                      alt="Online course on Stepik platform"
+                      width={400}
+                      height={200}
+                      className="rounded-xl shadow-md w-full h-auto"
+                    />
+                  </div>
+                </div>
+                
+                {/* Text and button on the right */}
+                <div className="space-y-4">
+                  <ul className="space-y-2 text-text-primary">
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-primary">•</span>
+                      Video lessons, quizzes, homework assignments
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-primary">•</span>
+                      Step-by-step methodology
+                    </li>
+                  </ul>
+                  
+                  <p className="text-text-secondary">
+                    You will understand how to properly digitize business or project and develop flexible financial models.
+                    You will understand the approach to building a financial model, which will allow you to make calculations for any new idea.
+                  </p>
+                  
+                  <p className="text-brand-primary font-medium">
+                    💡 Can be completed at your own pace. Result — your own working model.
+                  </p>
+                  
+                  <a
+                    href="https://stepik.org/193124"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-brand-primary rounded-lg hover:bg-brand-primary-hover transition-colors duration-200"
+                  >
+                    Go to Stepik.org course
+                  </a>
                 </div>
               </div>
-              
-              <div className="space-y-4 mb-6">
-                <ul className="space-y-2 text-text-primary">
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-primary">•</span>
-                    Video lessons, quizzes, homework assignments
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-primary">•</span>
-                    Step-by-step methodology
-                  </li>
-                </ul>
-                
-                <p className="text-text-secondary">
-                  You will understand how to properly digitize business or project and develop flexible financial models.
-                  You will understand the approach to building a financial model, which will allow you to make calculations for any new idea.
-                </p>
-                
-                <p className="text-brand-primary font-medium">
-                  💡 Can be completed at your own pace. Result — your own working model.
-                </p>
-              </div>
-              
-              <a
-                href="https://stepik.org/193124"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-brand-primary rounded-lg hover:bg-brand-primary-hover transition-colors duration-200"
-              >
-                Go to Stepik.org course
-              </a>
             </div>
 
             {/* Group Workshop */}
@@ -157,38 +163,41 @@ export default function EnglishTrainingDetailsPage(): ReactElement {
                 </h3>
               </div>
               
-              {/* Group Workshop Image */}
-              <div className="mb-6 text-center">
-                <div className="relative w-full max-w-sm mx-auto">
-                  <Image
-                    src="/images/image15.jpg"
-                    alt="Group workshop on financial modeling"
-                    width={400}
-                    height={200}
-                    className="rounded-xl shadow-md w-full h-auto"
-                  />
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                {/* Text on the left */}
+                <div className="space-y-4">
+                  <ul className="space-y-2 text-text-primary">
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-primary">•</span>
+                      Live training in small groups
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-primary">•</span>
+                      Practice on your own projects
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-primary">•</span>
+                      Feedback and support
+                    </li>
+                  </ul>
+                  
+                  <p className="text-brand-primary font-medium">
+                    💡 Conducted when group is formed. You can leave a request.
+                  </p>
                 </div>
-              </div>
-              
-              <div className="space-y-4">
-                <ul className="space-y-2 text-text-primary">
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-primary">•</span>
-                    Live training in small groups
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-primary">•</span>
-                    Practice on your own projects
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-primary">•</span>
-                    Feedback and support
-                  </li>
-                </ul>
                 
-                <p className="text-brand-primary font-medium">
-                  💡 Conducted when group is formed. You can leave a request.
-                </p>
+                {/* Image on the right */}
+                <div className="flex justify-center lg:justify-end">
+                  <div className="relative w-full max-w-md">
+                    <Image
+                      src="/images/image15.jpg"
+                      alt="Group workshop on financial modeling"
+                      width={400}
+                      height={200}
+                      className="rounded-xl shadow-md w-full h-auto"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -200,34 +209,37 @@ export default function EnglishTrainingDetailsPage(): ReactElement {
                 </h3>
               </div>
               
-              {/* Educational Programs Image */}
-              <div className="mb-6 text-center">
-                <div className="relative w-full max-w-sm mx-auto">
-                  <Image
-                    src="/images/image16.jpg"
-                    alt="Turnkey educational programs and courses"
-                    width={400}
-                    height={200}
-                    className="rounded-xl shadow-md w-full h-auto"
-                  />
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                {/* Image on the left */}
+                <div className="flex justify-center lg:justify-start">
+                  <div className="relative w-full max-w-md">
+                    <Image
+                      src="/images/image16.jpg"
+                      alt="Turnkey educational programs and courses"
+                      width={400}
+                      height={200}
+                      className="rounded-xl shadow-md w-full h-auto"
+                    />
+                  </div>
                 </div>
-              </div>
-              
-              <div className="space-y-4">
-                <ul className="space-y-2 text-text-primary">
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-primary">•</span>
-                    Turnkey course preparation (for accelerators, universities, projects)
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-primary">•</span>
-                    In Russian and English
-                  </li>
-                </ul>
                 
-                <p className="text-brand-primary font-medium">
-                  💡 Experience with EMBA, accelerators, impact platforms.
-                </p>
+                {/* Text on the right */}
+                <div className="space-y-4">
+                  <ul className="space-y-2 text-text-primary">
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-primary">•</span>
+                      Turnkey course preparation (for accelerators, universities, projects)
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-brand-primary">•</span>
+                      In Russian and English
+                    </li>
+                  </ul>
+                  
+                  <p className="text-brand-primary font-medium">
+                    💡 Experience with EMBA, accelerators, impact platforms.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
