@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "next dev -p 3876",
     "build": "next build",
-    "start": "npx serve@latest out -s -l ${PORT:-3000}",
+    "start": "npx serve@latest out -s -l tcp://0.0.0.0:${PORT:-8080}",
     "export": "next build",
     "deploy:static": "npm run export",
     "serve": "npx serve@latest out -s -l 3000",

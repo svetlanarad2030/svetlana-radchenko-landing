@@ -1,21 +1,14 @@
 name: svetlana-radchenko-landing
-services:
+static_sites:
 - name: web
-  source_dir: /
   github:
     repo: LevFaiger/svetlana-radchenko-landing
     branch: main
     deploy_on_push: true
-  run_command: npx serve@latest out -s -l 3000
   build_command: npm run build
-  environment_slug: node-js
-  instance_count: 1
-  instance_size_slug: basic-xxs
-  http_port: 3000
-  routes:
-  - path: /
-  health_check:
-    http_path: /
+  output_dir: out
+  index_document: index.html
+  error_document: 404.html
   envs:
   - key: NODE_ENV
     value: production
