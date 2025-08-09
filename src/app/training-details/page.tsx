@@ -45,7 +45,7 @@ export default function TrainingDetailsPage(): ReactElement {
         {/* Блок 1: Заголовок + подзаголовок */}
         <section className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-brand-primary mb-6">
-            Обучение. Финансы без страха и шаблонов.
+            Обучение. Финансы без страха и шаблонов
           </h1>
           <p className="text-xl text-text-secondary max-w-4xl mx-auto leading-relaxed">
             Делаю сложное понятным: через практику, живое объяснение и системный подход.
@@ -56,8 +56,24 @@ export default function TrainingDetailsPage(): ReactElement {
         <section className="mb-16">
           <div className="bg-white rounded-2xl p-8 shadow-sm">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              {/* Text on the left */}
-              <div className="space-y-6 text-text-primary">
+              {/* Image - appears first on mobile, second on desktop */}
+              <div className="flex justify-center lg:justify-end order-1 lg:order-2">
+                <div className="relative w-full max-w-md">
+                  <Image
+                    src="/images/image13.jpg"
+                    alt="Мои курсы и воркшопы"
+                    width={400}
+                    height={200}
+                    className="rounded-2xl shadow-lg w-full h-auto"
+                  />
+                </div>
+              </div>
+
+              {/* Text - appears second on mobile, first on desktop */}
+              <div className="space-y-6 text-text-primary order-2 lg:order-1">
+                <h3 className="text-2xl font-bold text-brand-primary mb-4 lg:hidden">
+                  Мои курсы и воркшопы
+                </h3>
                 <p className="text-lg leading-relaxed">
                   Мои курсы и воркшопы — это не теория «про цифры». Это маршрут, пройдя который, 
                   участники смогут увидеть бизнес целиком, понять, как интерпретируются результаты 
@@ -74,19 +90,6 @@ export default function TrainingDetailsPage(): ReactElement {
                   Обучение подходит как для тех, кто только начинает, так и для опытных команд — 
                   когда нужно структурировать знания, собрать модель или подготовиться к росту.
                 </p>
-              </div>
-              
-              {/* Image on the right */}
-              <div className="flex justify-center lg:justify-end">
-                <div className="relative w-full max-w-md">
-                  <Image
-                    src="/images/image13.jpg"
-                    alt="Обучение финансовому моделированию"
-                    width={400}
-                    height={200}
-                    className="rounded-2xl shadow-lg w-full h-auto"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -108,21 +111,24 @@ export default function TrainingDetailsPage(): ReactElement {
               </div>
               
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                {/* Image on the left */}
-                <div className="flex justify-center lg:justify-start">
+                {/* Image - appears first on mobile, first on desktop */}
+                <div className="flex justify-center lg:justify-start order-1 lg:order-1">
                   <div className="relative w-full max-w-sm">
                     <Image
                       src="/images/image14.jpg"
-                      alt="Онлайн-курс на платформе Stepik"
-                      width={400}
-                      height={200}
+                      alt="Видео-уроки"
+                      width={150}
+                      height={300}
                       className="rounded-xl shadow-md w-full h-auto"
                     />
                   </div>
                 </div>
                 
-                {/* Text and button on the right */}
-                <div className="space-y-4">
+                {/* Text and button - appears second on mobile, second on desktop */}
+                <div className="space-y-4 order-2 lg:order-2">
+                  <h4 className="text-xl font-bold text-brand-primary mb-3 lg:hidden">
+                    Видео-уроки
+                  </h4>
                   <ul className="space-y-2 text-text-primary">
                     <li className="flex items-start gap-2">
                       <span className="text-brand-primary">•</span>
@@ -164,8 +170,24 @@ export default function TrainingDetailsPage(): ReactElement {
               </div>
               
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                {/* Text on the left */}
-                <div className="space-y-4">
+                {/* Image - appears first on mobile, second on desktop */}
+                <div className="flex justify-center lg:justify-end order-1 lg:order-2">
+                  <div className="relative w-full max-w-md">
+                    <Image
+                      src="/images/image15.jpg"
+                      alt="Живое обучение"
+                      width={400}
+                      height={200}
+                      className="rounded-xl shadow-md w-full h-auto"
+                    />
+                  </div>
+                </div>
+
+                {/* Text - appears second on mobile, first on desktop */}
+                <div className="space-y-4 order-2 lg:order-1">
+                  <h4 className="text-xl font-bold text-brand-primary mb-3 lg:hidden">
+                    Живое обучение
+                  </h4>
                   <ul className="space-y-2 text-text-primary">
                     <li className="flex items-start gap-2">
                       <span className="text-brand-primary">•</span>
@@ -185,19 +207,6 @@ export default function TrainingDetailsPage(): ReactElement {
                     💡 Проводится при наборе группы. Можно оставить заявку.
                   </p>
                 </div>
-                
-                {/* Image on the right */}
-                <div className="flex justify-center lg:justify-end">
-                  <div className="relative w-full max-w-md">
-                    <Image
-                      src="/images/image15.jpg"
-                      alt="Групповой воркшоп по финансовому моделированию"
-                      width={400}
-                      height={200}
-                      className="rounded-xl shadow-md w-full h-auto"
-                    />
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -210,12 +219,12 @@ export default function TrainingDetailsPage(): ReactElement {
               </div>
               
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                {/* Image on the left */}
-                <div className="flex justify-center lg:justify-start">
+                {/* Image - appears first on mobile, first on desktop */}
+                <div className="flex justify-center lg:justify-start order-1 lg:order-1">
                   <div className="relative w-full max-w-md">
                     <Image
                       src="/images/image16.jpg"
-                      alt="Образовательные программы и курсы под ключ"
+                      alt="Подготовка"
                       width={400}
                       height={200}
                       className="rounded-xl shadow-md w-full h-auto"
@@ -223,8 +232,11 @@ export default function TrainingDetailsPage(): ReactElement {
                   </div>
                 </div>
                 
-                {/* Text on the right */}
-                <div className="space-y-4">
+                {/* Text - appears second on mobile, second on desktop */}
+                <div className="space-y-4 order-2 lg:order-2">
+                  <h4 className="text-xl font-bold text-brand-primary mb-3 lg:hidden">
+                    Подготовка
+                  </h4>
                   <ul className="space-y-2 text-text-primary">
                     <li className="flex items-start gap-2">
                       <span className="text-brand-primary">•</span>
