@@ -1,11 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Enable static export
+  output: 'export',
+  trailingSlash: true,
   // Force fresh build - disable cache
   distDir: '.next',
   turbopack: {
     // Turbopack configuration for development
   },
   images: {
+    unoptimized: true, // Disable Next.js image optimization for static export
     formats: ['image/webp', 'image/avif'],
     remotePatterns: [],
   },

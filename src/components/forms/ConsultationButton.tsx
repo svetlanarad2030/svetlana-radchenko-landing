@@ -55,26 +55,10 @@ export function ConsultationButton({
   
   /**
    * Handle consultation button click
-   * Tracks email click and opens mailto link
+   * Tracks email click with client-side analytics
    */
-  const handleClick = async () => {
-    // Track email click asynchronously (non-blocking)
-    try {
-      await fetch('/api/track-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          subject: EMAIL_SUBJECTS.CONSULTATION,
-          source_page: sourcePage,
-        }),
-      });
-    } catch (error) {
-      console.error('Failed to track email:', error);
-    }
-    
-    // Optional: Add analytics or other tracking here
+  const handleClick = () => {
+    // Client-side analytics tracking
     if (typeof window !== 'undefined' && (window as any).gtag) {
       (window as any).gtag('event', 'email_click', {
         event_category: 'engagement',
@@ -82,6 +66,13 @@ export function ConsultationButton({
         value: 1,
       });
     }
+    
+    // Console log for basic tracking (can be removed in production)
+    console.log('Email tracking:', {
+      subject: EMAIL_SUBJECTS.CONSULTATION,
+      source_page: sourcePage,
+      timestamp: new Date().toISOString()
+    });
   };
 
   const mailtoLink = getConsultationMailtoLink();

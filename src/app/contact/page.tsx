@@ -22,20 +22,64 @@ export default function ContactPage(): ReactElement {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [showError, setShowError] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
-    setIsSubmitting(false);
-    
-    // In a real app, you would send the data to your backend
-    alert('Заявка отправлена! Мы свяжемся с вами в ближайшее время.');
+    try {
+      // Reset any previous states
+      setShowError(false);
+      setShowSuccess(false);
+
+      // Client-side analytics tracking
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'form_submit', {
+          event_category: 'engagement',
+          event_label: 'contact_ru',
+          value: 1,
+        });
+      }
+
+      // Console log for tracking
+      console.log('Form submission:', {
+        subject: 'Общий запрос',
+        source_page: 'contact_ru',
+        timestamp: new Date().toISOString()
+      });
+
+      // Form data logged for analytics
+      console.log('Form data ready:', {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        source: 'contact_ru',
+        timestamp: new Date().toISOString()
+      });
+
+      // Reset form and show success message
+      setFormData({ name: '', email: '', message: '' });
+      setShowSuccess(true);
+      
+      // Hide success message after 5 seconds
+      setTimeout(() => {
+        setShowSuccess(false);
+      }, 5000);
+      
+    } catch (error) {
+      console.error('Error:', error);
+      setShowError(true);
+      setShowSuccess(false);
+      
+      // Hide error message after 5 seconds
+      setTimeout(() => {
+        setShowError(false);
+      }, 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -138,6 +182,40 @@ export default function ContactPage(): ReactElement {
                     placeholder="Опишите ваш запрос или задачу"
                   />
                 </div>
+
+                {showSuccess && (
+                  <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
+                    <div className="flex items-center">
+                      <div className="flex-shrink-0">
+                        <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div className="ml-3">
+                        <p className="text-sm font-medium text-green-800">
+                          Заявка отправлена! Мы свяжемся с вами в ближайшее время.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {showError && (
+                  <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
+                    <div className="flex items-center">
+                      <div className="flex-shrink-0">
+                        <svg className="w-5 h-5 text-red-400" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div className="ml-3">
+                        <p className="text-sm font-medium text-red-800">
+                          Ошибка при открытии почтового клиента. Попробуйте еще раз.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
 
                 <Button
                   type="submit"
