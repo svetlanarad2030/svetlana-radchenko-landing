@@ -92,8 +92,35 @@ export function Navigation(): ReactElement {
           </div>
         </div>
 
-        {/* Mobile Navigation Button */}
-        <div className="md:hidden">
+        {/* Mobile Language Switcher + Navigation Button */}
+        <div className="md:hidden flex items-center gap-3">
+          {/* Mobile Language Switcher - Always visible */}
+          <div className="flex items-center gap-1">
+            <button
+              onClick={() => switchLanguage('ru')}
+              className={cn(
+                'px-2 py-1 text-xs font-medium rounded transition-colors',
+                locale === 'ru'
+                  ? 'bg-brand-primary text-white'
+                  : 'text-text-secondary hover:text-brand-primary hover:bg-gray-100'
+              )}
+            >
+              RU
+            </button>
+            <button
+              onClick={() => switchLanguage('en')}
+              className={cn(
+                'px-2 py-1 text-xs font-medium rounded transition-colors',
+                locale === 'en'
+                  ? 'bg-brand-primary text-white'
+                  : 'text-text-secondary hover:text-brand-primary hover:bg-gray-100'
+              )}
+            >
+              EN
+            </button>
+          </div>
+          
+          {/* Hamburger Menu Button */}
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="text-brand-primary"
@@ -130,38 +157,6 @@ export function Navigation(): ReactElement {
               </Link>
             ))}
             
-            {/* Mobile Language Switcher */}
-            <div className="flex items-center gap-2 px-3 py-2 border-t border-gray-100 mt-2 pt-4">
-              <span className="text-sm text-text-secondary mr-2">Language:</span>
-              <button
-                onClick={() => {
-                  switchLanguage('ru');
-                  setIsMobileMenuOpen(false);
-                }}
-                className={cn(
-                  'px-3 py-1 text-sm font-medium rounded transition-colors',
-                  locale === 'ru'
-                    ? 'bg-brand-primary text-white'
-                    : 'text-text-secondary hover:text-brand-primary hover:bg-gray-100'
-                )}
-              >
-                RU
-              </button>
-              <button
-                onClick={() => {
-                  switchLanguage('en');
-                  setIsMobileMenuOpen(false);
-                }}
-                className={cn(
-                  'px-3 py-1 text-sm font-medium rounded transition-colors',
-                  locale === 'en'
-                    ? 'bg-brand-primary text-white'
-                    : 'text-text-secondary hover:text-brand-primary hover:bg-gray-100'
-                )}
-              >
-                EN
-              </button>
-            </div>
           </div>
         </div>
       )}
