@@ -1,16 +1,17 @@
 name: svetlana-radchenko-landing
 static_sites:
-- name: web
-  github:
-    repo: LevFaiger/svetlana-radchenko-landing
-    branch: main
-    deploy_on_push: true
-  build_command: npm run build && ls -la out/
-  output_dir: out
-  index_document: index.html
-  error_document: 404.html
-  envs:
-  - key: NODE_ENV
-    value: production
-  - key: NEXT_TELEMETRY_DISABLED
-    value: "1"
+  - name: web
+    github:
+      repo: LevFaiger/svetlana-radchenko-landing
+      branch: main
+      deploy_on_push: true
+    build_command: npm ci && npm run build && npm run export && ls -la out/
+    output_dir: out
+    index_document: index.html
+    # If you don't have a custom 404 page exported, use index.html as fallback:
+    error_document: index.html
+    envs:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_TELEMETRY_DISABLED
+        value: "1"
