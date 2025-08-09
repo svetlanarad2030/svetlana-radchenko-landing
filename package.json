@@ -7,9 +7,10 @@
   "scripts": {
     "dev": "next dev -p 3876",
     "build": "next build",
-    "start": "npx serve@latest out -p $PORT",
+    "start": "npx serve@latest out -s -l ${PORT:-3000}",
     "export": "next build",
     "deploy:static": "npm run export",
+    "serve": "npx serve@latest out -s -l 3000",
     "lint": "next lint --max-warnings 0",
     "lint:fix": "next lint --fix",
     "test": "vitest",

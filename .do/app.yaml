@@ -1,0 +1,23 @@
+name: svetlana-radchenko-landing
+services:
+- name: web
+  source_dir: /
+  github:
+    repo: LevFaiger/svetlana-radchenko-landing
+    branch: main
+    deploy_on_push: true
+  run_command: npx serve@latest out -s -l 3000
+  build_command: npm run build
+  environment_slug: node-js
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  http_port: 3000
+  routes:
+  - path: /
+  health_check:
+    http_path: /
+  envs:
+  - key: NODE_ENV
+    value: production
+  - key: NEXT_TELEMETRY_DISABLED
+    value: "1"
