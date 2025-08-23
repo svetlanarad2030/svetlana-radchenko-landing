@@ -116,7 +116,7 @@ export default function EnglishContactPage(): ReactElement {
       
       {/* Main contact section with light background */}
       <main className="min-h-screen" style={{ backgroundColor: '#FAF6F5' }}>
-        <div className="max-w-4xl mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto px-4 py-8">
           {/* Hero Section */}
           <section className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-brand-primary mb-6">
@@ -286,7 +286,7 @@ export default function EnglishContactPage(): ReactElement {
                 </div>
                 
                 <div>
-                  <div className="font-semibold text-text-primary">Phone</div>
+                  <div className="font-semibold text-text-primary">WhatsApp</div>
                   <a 
                     href="tel:+79262240270"
                     className="hover:text-brand-primary transition-colors"
