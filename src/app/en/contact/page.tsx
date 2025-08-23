@@ -127,9 +127,9 @@ export default function EnglishContactPage(): ReactElement {
             </p>
           </section>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
             {/* Contact Form */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
+            <div className="bg-white rounded-2xl p-8 shadow-sm" style={{ display: 'none' }}>
               <h2 className="text-2xl font-bold text-brand-primary mb-6">
                 Submit a Request
               </h2>
@@ -229,10 +229,8 @@ export default function EnglishContactPage(): ReactElement {
               </form>
             </div>
 
-            {/* Social Links and Contact Info */}
-            <div className="space-y-8">
-              {/* Social Media Icons */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm">
+            {/* QR Codes */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm h-full">
                 <h3 className="text-2xl font-bold text-brand-primary mb-6">
                   QR codes for quick access
                 </h3>
@@ -270,8 +268,8 @@ export default function EnglishContactPage(): ReactElement {
                 </div>
               </div>
 
-              {/* Additional Contact Info */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm">
+            {/* Direct Contact */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm h-full">
                 <h3 className="text-2xl font-bold text-brand-primary mb-6">
                   Direct Contact
                 </h3>
@@ -310,7 +308,6 @@ export default function EnglishContactPage(): ReactElement {
                   </div>
                 </div>
               </div>
-            </div>
           </div>
 
           {/* Call to Action */}
