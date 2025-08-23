@@ -62,43 +62,154 @@ export default function EnglishAboutPage(): ReactElement {
         {/* Facts Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-brand-primary mb-8 text-center">
-            Facts backed by experience, depth and approach
+            Finance practitioner with 26+ years of experience in financial management and project development, including international and public companies.
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {/* Experience */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {/* CFO Experience */}
             <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
               <div>
-                <h3 className="font-bold text-brand-primary text-xl mb-2">
-                  26+ years of finance experience
+                <h3 className="text-brand-primary text-xl mb-2">
+                  <span className="font-bold">Ex-CFO</span> of Bioprocess Group and Irish public company Ovoca Bio plc
                 </h3>
-                <p className="text-text-secondary">
-                  Systematic vision and maturity in financial management
-                </p>
               </div>
             </div>
 
-            {/* Projects */}
+            {/* Academic & Expert */}
             <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
               <div>
-                <h3 className="font-bold text-brand-primary text-xl mb-2">
-                  100+ completed projects
+                <h3 className="text-brand-primary text-xl mb-2">
+                  <span className="font-bold">PhD in Economics</span>, lecturer, mentor and expert at "Towards Change" foundation
                 </h3>
-                <p className="text-text-secondary">
-                  Proven expertise and practical results
-                </p>
               </div>
             </div>
 
-            {/* Approach */}
+            {/* Consultant */}
             <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
               <div>
                 <h3 className="font-bold text-brand-primary text-xl mb-2">
-                  Boutique approach
+                  Consultant for accelerators, universities and international programs
                 </h3>
-                <p className="text-text-secondary">
-                  Personal involvement, individual solutions, small team of experts
-                </p>
+              </div>
+            </div>
+
+            {/* Moderator & Speaker */}
+            <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+              <div>
+                <h3 className="text-brand-primary text-xl mb-2">
+                  <span className="font-bold">Moderator and speaker at business events</span>, including Zarubezhexpo business forums
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Additional Info Section */}
+        <section className="text-center mb-16">
+          <div className="max-w-2xl mx-auto">
+            <h3 className="text-2xl text-brand-primary mb-6">
+              <span className="font-bold">I have been supporting venture and technology projects for over 15 years</span> — from launch to scaling
+            </h3>
+            
+            <h2 className="text-3xl font-bold text-brand-primary mb-8">
+              My expertise
+            </h2>
+            
+            <div className="space-y-6 max-w-5xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
+                  <div>
+                    <h3 className="text-brand-primary text-xl mb-2">
+                      Building <span className="font-bold">sustainable financial architecture</span> for business
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
+                  <div>
+                    <h3 className="text-brand-primary text-xl mb-2">
+                      <span className="font-bold">Strategic development</span> and planning
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1">
+                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
+                  <div>
+                    <h3 className="text-brand-primary text-xl mb-2">
+                      Mentoring, financial model review, working with investments and deal structure
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2 className="text-3xl font-bold text-brand-primary mb-8 mt-16">
+              How I work
+            </h2>
+            
+            <div className="space-y-6 max-w-5xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
+                  <div>
+                    <h3 className="text-brand-primary text-xl mb-2">
+                      I get <span className="font-bold">personally involved</span> in the project if it's really necessary
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
+                  <div>
+                    <h3 className="text-brand-primary text-xl mb-2">
+                      I involve a <span className="font-bold">narrow circle of proven experts</span> for multi-faceted tasks
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1">
+                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
+                  <div>
+                    <h3 className="text-brand-primary text-xl mb-2">
+                      I possess <span className="font-bold">systematic and non-standard thinking</span> — I help look at business differently, highlight opportunities, digitize and strengthen
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2 className="text-3xl font-bold text-brand-primary mb-8 mt-16">
+              My approach
+            </h2>
+            
+            <div className="space-y-6 max-w-5xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
+                  <div>
+                    <h3 className="text-brand-primary text-xl mb-2">
+                      <span className="font-bold">A financial model helps to see how business can develop.</span>
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
+                  <div>
+                    <h3 className="text-brand-primary text-xl mb-2">
+                      It's not just a projection — it's a way to think ahead, see risks and opportunities.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1">
+                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
+                  <div>
+                    <h3 className="text-brand-primary text-xl mb-2">
+                      <span className="font-bold">To understand means to manage.</span>
+                    </h3>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

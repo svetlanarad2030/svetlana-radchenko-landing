@@ -25,13 +25,11 @@
     "title": "About Me & How I Can Help",
     "intro": "Finance practitioner with 26+ years of experience in financial management and project development. Ex-CFO of Bioprocess Group and Irish public company Ovoca Bio plc, PhD in Economics, mentor, lecturer and expert at the 'Towards Change' foundation. Consultant for accelerators, universities, international programs and moderator of events at Zarubezhexpo.",
     "facts": {
-      "title": "Facts backed by experience, depth and approach",
-      "experience": "26+ years of finance experience",
-      "experienceDesc": "Systematic vision and maturity in financial management",
-      "projects": "100+ completed projects",
-      "projectsDesc": "Proven expertise and practical results",
-      "approach": "Boutique approach",
-      "approachDesc": "Personal involvement, individual solutions, small team of experts"
+      "title": "Finance practitioner with 26+ years of experience in financial management and project development, including international and public companies.",
+      "cfo": "Ex-CFO of Bioprocess Group and Irish public company Ovoca Bio plc",
+      "academic": "PhD in Economics, lecturer, mentor and expert at \"Towards Change\" foundation",
+      "consultant": "Consultant for accelerators, universities and international programs",
+      "moderator": "Moderator and speaker at business events, including Zarubezhexpo business forums"
     },
     "cta": {
       "title": "Ready to discuss your project?",
