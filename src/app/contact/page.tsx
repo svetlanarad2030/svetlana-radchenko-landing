@@ -5,89 +5,14 @@
 
 'use client';
 
-import { ReactElement, useState } from 'react';
+import { ReactElement } from 'react';
 import Image from 'next/image';
 import { Navigation } from '@/components/navigation/Navigation';
-import { Input } from '@/components/ui/Input';
-import { Textarea } from '@/components/ui/Textarea';
-import { Button } from '@/components/ui/Button';
 
 /**
  * Contact page component
  */
 export default function ContactPage(): ReactElement {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [showSuccess, setShowSuccess] = useState(false);
-  const [showError, setShowError] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      // Reset any previous states
-      setShowError(false);
-      setShowSuccess(false);
-
-      // Client-side analytics tracking
-      if (typeof window !== 'undefined' && (window as any).gtag) {
-        (window as any).gtag('event', 'form_submit', {
-          event_category: 'engagement',
-          event_label: 'contact_ru',
-          value: 1,
-        });
-      }
-
-      // Console log for tracking
-      console.log('Form submission:', {
-        subject: 'Общий запрос',
-        source_page: 'contact_ru',
-        timestamp: new Date().toISOString()
-      });
-
-      // Form data logged for analytics
-      console.log('Form data ready:', {
-        name: formData.name,
-        email: formData.email,
-        message: formData.message,
-        source: 'contact_ru',
-        timestamp: new Date().toISOString()
-      });
-
-      // Reset form and show success message
-      setFormData({ name: '', email: '', message: '' });
-      setShowSuccess(true);
-      
-      // Hide success message after 5 seconds
-      setTimeout(() => {
-        setShowSuccess(false);
-      }, 5000);
-      
-    } catch (error) {
-      console.error('Error:', error);
-      setShowError(true);
-      setShowSuccess(false);
-      
-      // Hide error message after 5 seconds
-      setTimeout(() => {
-        setShowError(false);
-      }, 5000);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   const socialLinks = [
     {
