@@ -113,12 +113,12 @@ export default function EnglishTrainingDetailsPage(): ReactElement {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 {/* Image - appears first on mobile, first on desktop */}
                 <div className="flex justify-center lg:justify-start order-1 lg:order-1">
-                  <div className="relative w-full max-w-sm">
+                  <div className="relative w-full" style={{ maxWidth: '270px' }}>
                     <Image
                       src="/images/image14.jpg"
                       alt="Video lessons"
-                      width={150}
-                      height={300}
+                      width={105}
+                      height={210}
                       className="rounded-xl shadow-md w-full h-auto"
                     />
                   </div>

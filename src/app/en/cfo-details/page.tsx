@@ -107,12 +107,28 @@ export default function EnglishCfoDetailsPage(): ReactElement {
               </div>
               
               {/* Text on the right */}
-              <div className="text-text-primary">
+              <div className="space-y-6 text-text-primary">
                 <p className="text-lg leading-relaxed">
-                  I work as an external CFO in projects that need control, strategic development, 
-                  evaluation of third-party projects and help in conducting M&A deals. I will set up 
-                  the system, help the owner minimize manual management, propose solutions for optimizing 
-                  company operations in accordance with set goals.
+                  <span className="font-bold">I work as an external CFO</span> in projects where it's important not just to count — but <span className="font-bold">to build a system and manage finances strategically.</span>
+                </p>
+                
+                <ul className="space-y-3 text-lg ml-4">
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+                    <span>Set up <span className="font-bold">planning and control system,</span></span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+                    <span>Help the owner <span className="font-bold">minimize manual management,</span></span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+                    <span>Propose solutions for optimizing company operations in accordance with set goals</span>
+                  </li>
+                </ul>
+                
+                <p className="text-lg leading-relaxed">
+                  <span className="font-bold">Focus — on sustainable growth, transparency and manageability.</span>
                 </p>
               </div>
             </div>

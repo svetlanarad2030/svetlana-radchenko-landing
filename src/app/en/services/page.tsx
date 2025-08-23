@@ -21,13 +21,13 @@ export default function EnglishServicesPage(): ReactElement {
     <div className="min-h-screen">
       <Navigation />
       <main className="bg-bg-primary">
-        <div className="max-w-6xl mx-auto px-4 py-16">
+        <div className="max-w-6xl mx-auto px-4 py-8">
           {/* Hero Section */}
-          <section className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-brand-primary mb-6">
+          <section className="mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-brand-primary mb-4 text-center">
               Services
             </h1>
-            <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto text-center">
               Three areas of work for developing your business
             </p>
           </section>

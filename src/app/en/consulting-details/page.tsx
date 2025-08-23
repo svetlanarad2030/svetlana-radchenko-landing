@@ -110,13 +110,26 @@ export default function EnglishConsultingDetailsPage(): ReactElement {
               {/* Text on the right */}
               <div className="space-y-6 text-text-primary">
                 <p className="text-lg leading-relaxed">
-                  I work with entrepreneurs who value understanding the financial side of business: 
-                  see and feel their numbers, understand potential, to ultimately influence results.
+                  I work with entrepreneurs who value understanding the financial side of business:
+                </p>
+                
+                <ul className="space-y-3 text-lg ml-4">
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+                    <span>see and feel their numbers,</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+                    <span>understand potential,</span>
+                  </li>
+                </ul>
+                
+                <p className="text-lg leading-relaxed">
+                  to ultimately <span className="font-bold">influence results.</span>
                 </p>
                 
                 <p className="text-lg leading-relaxed">
-                  Each request is unique — and so is the solution. I get personally involved, 
-                  and when necessary, engage a narrow circle of experts.
+                  Each request is unique — and so is the solution.
                 </p>
               </div>
             </div>
@@ -201,15 +214,6 @@ export default function EnglishConsultingDetailsPage(): ReactElement {
               Ready to discuss your project?
             </h3>
             
-            <p className="text-lg text-text-secondary mb-8">
-              📩 Fill out the form or write to{' '}
-              <a 
-                href="mailto:finmodelguru@gmail.com"
-                className="text-brand-primary hover:underline"
-              >
-                finmodelguru@gmail.com
-              </a>
-            </p>
             
             <ConsultationButton
               sourcePage="consulting-details"

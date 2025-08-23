@@ -22,196 +22,91 @@ export default function EnglishAboutPage(): ReactElement {
     <div className="min-h-screen">
       <Navigation />
       <main className="bg-bg-primary">
-      <div className="max-w-4xl mx-auto px-4 py-16">
+      <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Hero Section */}
-        <section className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-primary mb-6">
+        <section className="mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-brand-primary mb-4 text-center">
             About Me & How I Can Help
           </h1>
-        </section>
-
-        {/* Main Content */}
-        <section className="prose prose-lg mx-auto mb-16">
-          <div className="space-y-6 text-text-primary">
-            <p className="text-lg leading-relaxed">
-              Finance practitioner with 26+ years of experience in financial management and project development. 
-              Ex-CFO of Bioprocess Group and Irish public company Ovoca Bio plc, 
-              PhD in Economics, mentor, lecturer and expert at the &apos;Towards Change&apos; foundation. 
-              Consultant for accelerators, universities, international programs and moderator of events at Zarubezhexpo.
-            </p>
-            
-            <p className="text-lg leading-relaxed">
-              For over 15 years I have been supporting venture and technology projects. 
-              My expertise is building sustainable financial architecture of business and strategic development.
-            </p>
-            
-            <p className="text-lg leading-relaxed">
-              I get personally involved in the project if it&apos;s really needed. 
-              I possess systematic and non-standard thinking — I help to look at business differently, 
-              see and analyze opportunities. In complex multi-faceted tasks I involve proven experts.
-            </p>
-            
-            <p className="text-lg leading-relaxed">
-              My deep conviction: Financial model helps to see how business can develop. 
-              But it&apos;s not just a projection — it&apos;s a way to think ahead, see risks and opportunities. 
-              To understand means to manage.
-            </p>
-          </div>
-        </section>
-
-        {/* Facts Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-brand-primary mb-8 text-center">
-            Finance practitioner with 26+ years of experience in financial management and project development, including international and public companies.
+          <p className="text-lg leading-relaxed text-text-primary mb-4">
+            <span className="font-bold">Finance practitioner with 26+ years of experience</span> in financial management and project development, including international and public companies.
+          </p>
+          
+          <ul className="space-y-1 text-lg text-text-primary">
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span><span className="font-bold">Ex-CFO</span> of Bioprocess Group and Irish public company <span className="font-bold">Ovoca Bio plc</span></span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span><span className="font-bold">PhD in Economics</span>, lecturer, mentor and expert at <span className="font-bold">Towards Change</span> foundation</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span>Consultant for accelerators, universities and international programs</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span><span className="font-bold">Moderator and speaker at business events</span>, including business forums: Zarubezhexpo</span>
+            </li>
+          </ul>
+          
+          <p className="text-lg leading-relaxed text-text-primary mt-4">
+            <span className="font-bold">Supporting venture and technology projects for over 15 years</span> — from launch to scaling.
+          </p>
+          
+          <h2 className="text-2xl font-bold text-brand-primary mb-4 mt-6">
+            My Expertise
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {/* CFO Experience */}
-            <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-              <div>
-                <h3 className="text-brand-primary text-xl mb-2">
-                  <span className="font-bold">Ex-CFO</span> of Bioprocess Group and Irish public company Ovoca Bio plc
-                </h3>
-              </div>
-            </div>
-
-            {/* Academic & Expert */}
-            <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-              <div>
-                <h3 className="text-brand-primary text-xl mb-2">
-                  <span className="font-bold">PhD in Economics</span>, lecturer, mentor and expert at "Towards Change" foundation
-                </h3>
-              </div>
-            </div>
-
-            {/* Consultant */}
-            <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-              <div>
-                <h3 className="font-bold text-brand-primary text-xl mb-2">
-                  Consultant for accelerators, universities and international programs
-                </h3>
-              </div>
-            </div>
-
-            {/* Moderator & Speaker */}
-            <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-              <div>
-                <h3 className="text-brand-primary text-xl mb-2">
-                  <span className="font-bold">Moderator and speaker at business events</span>, including Zarubezhexpo business forums
-                </h3>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Additional Info Section */}
-        <section className="text-center mb-16">
-          <div className="max-w-2xl mx-auto">
-            <h3 className="text-2xl text-brand-primary mb-6">
-              <span className="font-bold">I have been supporting venture and technology projects for over 15 years</span> — from launch to scaling
-            </h3>
-            
-            <h2 className="text-3xl font-bold text-brand-primary mb-8">
-              My expertise
-            </h2>
-            
-            <div className="space-y-6 max-w-5xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      Building <span className="font-bold">sustainable financial architecture</span> for business
-                    </h3>
-                  </div>
-                </div>
-
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      <span className="font-bold">Strategic development</span> and planning
-                    </h3>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1">
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      Mentoring, financial model review, working with investments and deal structure
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <h2 className="text-3xl font-bold text-brand-primary mb-8 mt-16">
-              How I work
-            </h2>
-            
-            <div className="space-y-6 max-w-5xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      I get <span className="font-bold">personally involved</span> in the project if it's really necessary
-                    </h3>
-                  </div>
-                </div>
-
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      I involve a <span className="font-bold">narrow circle of proven experts</span> for multi-faceted tasks
-                    </h3>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1">
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      I possess <span className="font-bold">systematic and non-standard thinking</span> — I help look at business differently, highlight opportunities, digitize and strengthen
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <h2 className="text-3xl font-bold text-brand-primary mb-8 mt-16">
-              My approach
-            </h2>
-            
-            <div className="space-y-6 max-w-5xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      <span className="font-bold">A financial model helps to see how business can develop.</span>
-                    </h3>
-                  </div>
-                </div>
-
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      It's not just a projection — it's a way to think ahead, see risks and opportunities.
-                    </h3>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1">
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      <span className="font-bold">To understand means to manage.</span>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <ul className="space-y-1 text-lg text-text-primary">
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span><span className="font-bold">Building sustainable financial architecture</span> of business</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span><span className="font-bold">Strategic development and</span> planning</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span>Mentoring, financial model review, working with investments and deal structure</span>
+            </li>
+          </ul>
+          
+          <h2 className="text-2xl font-bold text-brand-primary mb-4 mt-6">
+            How I Work
+          </h2>
+          
+          <ul className="space-y-1 text-lg text-text-primary">
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span>I get <span className="font-bold">personally involved</span> in projects if it's really necessary</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span>I engage <span className="font-bold">a narrow circle of specialized experts</span> for complex tasks</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span>I possess <span className="font-bold">systematic and integrative thinking</span> — I help look at business differently, highlight opportunities, digitize and strengthen</span>
+            </li>
+          </ul>
+          
+          <h2 className="text-2xl font-bold text-brand-primary mb-4 mt-6">
+            My Approach
+          </h2>
+          
+          <div className="space-y-4 text-text-primary">
+            <p className="text-lg leading-relaxed">
+              <span className="font-bold">A financial model helps see how a business can develop.</span>
+            </p>
+            <p className="text-lg leading-relaxed">
+              It's not just a projection — it's a way to think ahead, see risks and opportunities.
+            </p>
+            <p className="text-lg leading-relaxed">
+              <span className="font-bold">To understand means to manage.</span>
+            </p>
           </div>
         </section>
 
@@ -222,7 +117,7 @@ export default function EnglishAboutPage(): ReactElement {
               Ready to discuss your project?
             </h3>
             <p className="text-lg text-text-secondary mb-8">
-              Tell me about your business challenges, and I&apos;ll help find optimal solutions
+              Tell me about your business challenges, and I'll help find optimal solutions
             </p>
             <ConsultationButton
               sourcePage="about"

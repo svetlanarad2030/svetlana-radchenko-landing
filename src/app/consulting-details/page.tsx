@@ -115,11 +115,11 @@ export default function ConsultingDetailsPage(): ReactElement {
                 
                 <ul className="space-y-3 text-lg ml-4">
                   <li className="flex items-start gap-3">
-                    <span className="text-green-600 mt-1 text-xl">✓</span>
+                    <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
                     <span>увидеть и почувствовать свои цифры,</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-green-600 mt-1 text-xl">✓</span>
+                    <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
                     <span>понять потенциал,</span>
                   </li>
                 </ul>

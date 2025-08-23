@@ -114,15 +114,15 @@ export default function CfoDetailsPage(): ReactElement {
                 
                 <ul className="space-y-3 text-lg ml-4">
                   <li className="flex items-start gap-3">
-                    <span className="text-green-600 mt-1 text-xl">✓</span>
+                    <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
                     <span>Настроим <span className="font-bold">систему планирования и контроля,</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-green-600 mt-1 text-xl">✓</span>
+                    <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
                     <span>Помогу собственнику <span className="font-bold">минимизировать ручное управление,</span></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-green-600 mt-1 text-xl">✓</span>
+                    <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
                     <span>Предложу решения по оптимизации работы компании в соответствии с поставленными целями</span>
                   </li>
                 </ul>
