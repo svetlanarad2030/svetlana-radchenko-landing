@@ -22,102 +22,82 @@ export default function AboutPage(): ReactElement {
     <div className="min-h-screen">
       <Navigation />
       <main className="bg-bg-primary">
-      <div className="max-w-4xl mx-auto px-4 py-16">
+      <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Hero Section */}
-        <section className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-primary mb-6">
+        <section className="mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-brand-primary mb-4 text-center">
             Кто я и чем могу быть полезна
           </h1>
-        </section>
-
-        {/* Main Content */}
-        <section className="prose prose-lg mx-auto mb-16">
-          <div className="space-y-6 text-text-primary">
-            <p className="text-lg leading-relaxed">
-              <span className="font-bold">Финансист-практик с 26+ летним опытом</span> в управлении финансами и развитием проектов, в том числе в международных и публичных компаниях.
-            </p>
-            
-            <ul className="space-y-3 text-lg">
-              <li className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 text-xl">✓</span>
-                <span><span className="font-bold">Ex-CFO</span> группы компаний «Биопроцесс» и публичной ирландской компании «<span className="font-bold">Ovoca Bio plc</span>»</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 text-xl">✓</span>
-                <span><span className="font-bold">Кандидат экономических наук</span>, преподаватель, ментор и эксперт фонда «<span className="font-bold">Навстречу переменам</span>»</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 text-xl">✓</span>
-                <span>Консультант акселераторов, вузов и международных программ</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 text-xl">✓</span>
-                <span><span className="font-bold">Модератор и спикер деловых мероприятий</span>, включая бизнес-форумы: Зарубежэкспо</span>
-              </li>
-            </ul>
-            
-            <p className="text-lg leading-relaxed mt-6">
-              <span className="font-bold">Сопровождаю венчурные и технологические проекты более 15 лет</span> — от запуска до масштабирования.
-            </p>
-          </div>
-        </section>
-
-
-        {/* Expertise Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-brand-primary mb-8">
+          <p className="text-lg leading-relaxed text-text-primary mb-4">
+            <span className="font-bold">Финансист-практик с 26+ летним опытом</span> в управлении финансами и развитием проектов, в том числе в международных и публичных компаниях.
+          </p>
+          
+          <ul className="space-y-1 text-lg text-text-primary">
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span><span className="font-bold">Ex-CFO</span> группы компаний «Биопроцесс» и публичной ирландской компании «<span className="font-bold">Ovoca Bio plc</span>»</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span><span className="font-bold">Кандидат экономических наук</span>, преподаватель, ментор и эксперт фонда «<span className="font-bold">Навстречу переменам</span>»</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span>Консультант акселераторов, вузов и международных программ</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span><span className="font-bold">Модератор и спикер деловых мероприятий</span>, включая бизнес-форумы: Зарубежэкспо</span>
+            </li>
+          </ul>
+          
+          <p className="text-lg leading-relaxed text-text-primary mt-4">
+            <span className="font-bold">Сопровождаю венчурные и технологические проекты более 15 лет</span> — от запуска до масштабирования.
+          </p>
+          
+          <h2 className="text-2xl font-bold text-brand-primary mb-4 mt-6">
             Моя экспертиза
           </h2>
           
-          <div className="space-y-4 max-w-4xl mx-auto">
-            <ul className="space-y-4 text-lg">
-              <li className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 text-xl">✓</span>
-                <span><span className="font-bold">Построение устойчивой финансовой архитектуры</span> бизнеса</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 text-xl">✓</span>
-                <span><span className="font-bold">Стратегическое развитие и</span> планирование</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 text-xl">✓</span>
-                <span>Менторинг, проверка фин.модели, работа с инвестициями и структурой сделок</span>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        {/* How I Work Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-brand-primary mb-8">
+          <ul className="space-y-1 text-lg text-text-primary">
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span><span className="font-bold">Построение устойчивой финансовой архитектуры</span> бизнеса</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span><span className="font-bold">Стратегическое развитие и</span> планирование</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span>Менторинг, проверка фин.модели, работа с инвестициями и структурой сделок</span>
+            </li>
+          </ul>
+          
+          <h2 className="text-2xl font-bold text-brand-primary mb-4 mt-6">
             Как я работаю
           </h2>
           
-          <div className="space-y-4 max-w-4xl mx-auto">
-            <ul className="space-y-4 text-lg">
-              <li className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 text-xl">✓</span>
-                <span>Включаюсь в проект <span className="font-bold">лично</span>, если это действительно необходимо</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 text-xl">✓</span>
-                <span>Подключаю <span className="font-bold">узкий круг профильных экспертов</span> под многоплановые задачи</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 text-xl">✓</span>
-                <span>Обладаю <span className="font-bold">системным и интегративным мышлением</span> — помогаю взглянуть на бизнес иначе, подсветить возможности, оцифровать и усилить</span>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        {/* My Approach Section */}
-        <section className="mb-16">
-          <h2 className="text-2xl font-bold text-brand-primary mb-8">
+          <ul className="space-y-1 text-lg text-text-primary">
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span>Включаюсь в проект <span className="font-bold">лично</span>, если это действительно необходимо</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span>Подключаю <span className="font-bold">узкий круг профильных экспертов</span> под многоплановые задачи</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
+              <span>Обладаю <span className="font-bold">системным и интегративным мышлением</span> — помогаю взглянуть на бизнес иначе, подсветить возможности, оцифровать и усилить</span>
+            </li>
+          </ul>
+          
+          <h2 className="text-2xl font-bold text-brand-primary mb-4 mt-6">
             Мой подход
           </h2>
           
-          <div className="space-y-6 max-w-4xl mx-auto text-text-primary">
+          <div className="space-y-4 text-text-primary">
             <p className="text-lg leading-relaxed">
               <span className="font-bold">Финансовая модель помогает увидеть, как может развиваться бизнес.</span>
             </p>
