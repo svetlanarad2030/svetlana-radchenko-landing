@@ -127,187 +127,83 @@ export default function ContactPage(): ReactElement {
             </p>
           </section>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Contact Form */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <h2 className="text-2xl font-bold text-brand-primary mb-6">
-                Оставить заявку
-              </h2>
+          <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+            {/* QR Codes */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm h-full">
+              <h3 className="text-2xl font-bold text-brand-primary mb-6">
+                QR-коды для быстрого доступа
+              </h3>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-text-primary mb-2">
-                    Имя *
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="bg-white border-gray-300 text-text-primary placeholder-gray-500 focus:border-brand-primary focus:ring-brand-primary"
-                    placeholder="Введите ваше имя"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-text-primary mb-2">
-                    Email *
-                  </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="bg-white border-gray-300 text-text-primary placeholder-gray-500 focus:border-brand-primary focus:ring-brand-primary"
-                    placeholder="Введите ваш email"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-text-primary mb-2">
-                    Запрос *
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    className="bg-white border-gray-300 text-text-primary placeholder-gray-500 focus:border-brand-primary focus:ring-brand-primary resize-none"
-                    placeholder="Опишите ваш запрос или задачу"
-                  />
-                </div>
-
-                {showSuccess && (
-                  <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
-                    <div className="flex items-center">
-                      <div className="flex-shrink-0">
-                        <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                        </svg>
+              <div className="grid grid-cols-1 gap-6">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.id}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-200 group"
+                  >
+                    <div className="relative w-20 h-20 flex-shrink-0">
+                      <Image
+                        src={social.icon}
+                        alt={`${social.name} QR Code`}
+                        fill
+                        className="object-contain group-hover:scale-105 transition-transform duration-200"
+                      />
+                    </div>
+                    <div>
+                      <div className="text-text-primary font-semibold text-lg">
+                        {social.name}
                       </div>
-                      <div className="ml-3">
-                        <p className="text-sm font-medium text-green-800">
-                          Заявка отправлена! Мы свяжемся с вами в ближайшее время.
-                        </p>
+                      <div className="text-text-secondary text-sm">
+                        Отсканируйте QR-код
+                      </div>
+                      <div className="text-text-secondary text-xs mt-1">
+                        {social.url.replace('https://', '').replace('mailto:', '')}
                       </div>
                     </div>
-                  </div>
-                )}
-
-                {showError && (
-                  <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
-                    <div className="flex items-center">
-                      <div className="flex-shrink-0">
-                        <svg className="w-5 h-5 text-red-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <div className="ml-3">
-                        <p className="text-sm font-medium text-red-800">
-                          Ошибка при открытии почтового клиента. Попробуйте еще раз.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  loading={isSubmitting}
-                  className="w-full bg-brand-primary text-white hover:bg-brand-primary-hover font-semibold py-3"
-                  size="lg"
-                >
-                  {isSubmitting ? 'Отправка...' : 'Оставить заявку'}
-                </Button>
-              </form>
+                  </a>
+                ))}
+              </div>
             </div>
 
-            {/* Social Links and Contact Info */}
-            <div className="space-y-8">
-              {/* Social Media Icons */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm">
-                <h3 className="text-2xl font-bold text-brand-primary mb-6">
-                  QR-коды для быстрого доступа
-                </h3>
-                
-                <div className="grid grid-cols-1 gap-6">
-                  {socialLinks.map((social) => (
-                    <a
-                      key={social.id}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-200 group"
-                    >
-                      <div className="relative w-20 h-20 flex-shrink-0">
-                        <Image
-                          src={social.icon}
-                          alt={`${social.name} QR Code`}
-                          fill
-                          className="object-contain group-hover:scale-105 transition-transform duration-200"
-                        />
-                      </div>
-                      <div>
-                        <div className="text-text-primary font-semibold text-lg">
-                          {social.name}
-                        </div>
-                        <div className="text-text-secondary text-sm">
-                          Отсканируйте QR-код
-                        </div>
-                        <div className="text-text-secondary text-xs mt-1">
-                          {social.url.replace('https://', '').replace('mailto:', '')}
-                        </div>
-                      </div>
-                    </a>
-                  ))}
+            {/* Direct Contact */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm h-full">
+              <h3 className="text-2xl font-bold text-brand-primary mb-6">
+                Прямой контакт
+              </h3>
+              
+              <div className="space-y-4 text-text-secondary">
+                <div>
+                  <div className="font-semibold text-text-primary">Email</div>
+                  <a 
+                    href="mailto:finmodelguru@gmail.com"
+                    className="hover:text-brand-primary transition-colors"
+                  >
+                    finmodelguru@gmail.com
+                  </a>
                 </div>
-              </div>
-
-              {/* Additional Contact Info */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm">
-                <h3 className="text-2xl font-bold text-brand-primary mb-6">
-                  Прямой контакт
-                </h3>
                 
-                <div className="space-y-4 text-text-secondary">
-                  <div>
-                    <div className="font-semibold text-text-primary">Email</div>
-                    <a 
-                      href="mailto:finmodelguru@gmail.com"
-                      className="hover:text-brand-primary transition-colors"
-                    >
-                      finmodelguru@gmail.com
-                    </a>
-                  </div>
-                  
-                  <div>
-                    <div className="font-semibold text-text-primary">Телефон</div>
-                    <a 
-                      href="tel:+79262240270"
-                      className="hover:text-brand-primary transition-colors"
-                    >
-                      +7 926 2240270
-                    </a>
-                  </div>
-                  
-                  <div>
-                    <div className="font-semibold text-text-primary">Telegram</div>
-                    <a 
-                      href="https://t.me/FinModelGuru"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-brand-primary transition-colors"
-                    >
-                      @FinModelGuru
-                    </a>
-                  </div>
+                <div>
+                  <div className="font-semibold text-text-primary">WhatsApp</div>
+                  <a 
+                    href="tel:+79262240270"
+                    className="hover:text-brand-primary transition-colors"
+                  >
+                    +7 926 2240270
+                  </a>
+                </div>
+                
+                <div>
+                  <div className="font-semibold text-text-primary">Telegram</div>
+                  <a 
+                    href="https://t.me/FinModelGuru"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-brand-primary transition-colors"
+                  >
+                    @FinModelGuru
+                  </a>
                 </div>
               </div>
             </div>

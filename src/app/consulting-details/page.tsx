@@ -110,13 +110,26 @@ export default function ConsultingDetailsPage(): ReactElement {
               {/* Text on the right */}
               <div className="space-y-6 text-text-primary">
                 <p className="text-lg leading-relaxed">
-                  Работаю с предпринимателями, которым важно разобраться с финансовой стороной бизнеса: 
-                  увидеть и почувствовать свои цифры, понять потенциал, чтобы в итоге влиять на результат.
+                  Работаю с предпринимателями, которым важно разобраться с финансовой стороной бизнеса:
+                </p>
+                
+                <ul className="space-y-3 text-lg ml-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-green-600 mt-1 text-xl">✓</span>
+                    <span>увидеть и почувствовать свои цифры,</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-green-600 mt-1 text-xl">✓</span>
+                    <span>понять потенциал,</span>
+                  </li>
+                </ul>
+                
+                <p className="text-lg leading-relaxed">
+                  чтобы в итоге <span className="font-bold">влиять на результат.</span>
                 </p>
                 
                 <p className="text-lg leading-relaxed">
-                  Каждый запрос уникален — и решение тоже. Включаюсь лично, при необходимости привлекаю 
-                  узкий круг экспертов.
+                  Каждый запрос уникален — и решение тоже.
                 </p>
               </div>
             </div>
@@ -201,15 +214,6 @@ export default function ConsultingDetailsPage(): ReactElement {
               Готовы обсудить ваш проект?
             </h3>
             
-            <p className="text-lg text-text-secondary mb-8">
-              📩 Заполните форму или напишите на{' '}
-              <a 
-                href="mailto:finmodelguru@gmail.com"
-                className="text-brand-primary hover:underline"
-              >
-                finmodelguru@gmail.com
-              </a>
-            </p>
             
             <ConsultationButton
               sourcePage="consulting-details"

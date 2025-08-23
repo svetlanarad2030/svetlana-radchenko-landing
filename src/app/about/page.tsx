@@ -34,184 +34,99 @@ export default function AboutPage(): ReactElement {
         <section className="prose prose-lg mx-auto mb-16">
           <div className="space-y-6 text-text-primary">
             <p className="text-lg leading-relaxed">
-              Финансист-практик, 26+ лет опыта в управлении финансами и развитии проектов. 
-              Ex-CFO группы компаний «Биопроцесс» и публичной ирландской компании Ovoca Bio plc, 
-              к.э.н., ментор, преподаватель и эксперт фонда «Навстречу переменам». 
-              Консультант акселераторов, вузов, международных программ и модератор мероприятий Зарубежэкспо.
+              <span className="font-bold">Финансист-практик с 26+ летним опытом</span> в управлении финансами и развитием проектов, в том числе в международных и публичных компаниях.
             </p>
             
-            <p className="text-lg leading-relaxed">
-              Более 15 лет сопровождаю венчурные и технологические проекты. 
-              Моя экспертиза — построение устойчивой финансовой архитектуры бизнеса и стратегическое развитие.
-            </p>
+            <ul className="space-y-3 text-lg">
+              <li className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 text-xl">✓</span>
+                <span><span className="font-bold">Ex-CFO</span> группы компаний «Биопроцесс» и публичной ирландской компании «<span className="font-bold">Ovoca Bio plc</span>»</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 text-xl">✓</span>
+                <span><span className="font-bold">Кандидат экономических наук</span>, преподаватель, ментор и эксперт фонда «<span className="font-bold">Навстречу переменам</span>»</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 text-xl">✓</span>
+                <span>Консультант акселераторов, вузов и международных программ</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 text-xl">✓</span>
+                <span><span className="font-bold">Модератор и спикер деловых мероприятий</span>, включая бизнес-форумы: Зарубежэкспо</span>
+              </li>
+            </ul>
             
-            <p className="text-lg leading-relaxed">
-              Включаюсь в проект лично, если это действительно нужно. 
-              Обладаю системным и нестандартным мышлением — помогаю иначе взглянуть на бизнес, 
-              увидеть и проанализировать возможности. В сложных многоплановых задачах подключаю проверенных экспертов.
-            </p>
-            
-            <p className="text-lg leading-relaxed">
-              Моё глубокое убеждение: Финансовая модель помогает увидеть, как может развиваться бизнес. 
-              Но это не просто проекция — это способ подумать вперёд, увидеть риски и возможности. 
-              Понять — значит управлять.
+            <p className="text-lg leading-relaxed mt-6">
+              <span className="font-bold">Сопровождаю венчурные и технологические проекты более 15 лет</span> — от запуска до масштабирования.
             </p>
           </div>
         </section>
 
-        {/* Facts Section */}
+
+        {/* Expertise Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-brand-primary mb-8 text-center">
-            Финансист-практик с 26+ летним опытом в управлении финансами и развитии проектов, в том числе в международных и публичных компаниях.
+          <h2 className="text-2xl font-bold text-brand-primary mb-8">
+            Моя экспертиза
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {/* CFO Experience */}
-            <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-              <div>
-                <h3 className="text-brand-primary text-xl mb-2">
-                  <span className="font-bold">Ex-CFO</span> группы компаний «Биопроцесс» и публичной ирландской компании Ovoca Bio plc
-                </h3>
-              </div>
-            </div>
-
-            {/* Academic & Expert */}
-            <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-              <div>
-                <h3 className="text-brand-primary text-xl mb-2">
-                  <span className="font-bold">Кандидат экономических наук</span>, преподаватель, ментор и эксперт фонда «Навстречу переменам»
-                </h3>
-              </div>
-            </div>
-
-            {/* Consultant */}
-            <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-              <div>
-                <h3 className="font-bold text-brand-primary text-xl mb-2">
-                  Консультант акселераторов, вузов и международных программ
-                </h3>
-              </div>
-            </div>
-
-            {/* Moderator & Speaker */}
-            <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-              <div>
-                <h3 className="text-brand-primary text-xl mb-2">
-                  <span className="font-bold">Модератор и спикер деловых мероприятий</span>, включая бизнес-форумы Зарубежэкспо
-                </h3>
-              </div>
-            </div>
+          <div className="space-y-4 max-w-4xl mx-auto">
+            <ul className="space-y-4 text-lg">
+              <li className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 text-xl">✓</span>
+                <span><span className="font-bold">Построение устойчивой финансовой архитектуры</span> бизнеса</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 text-xl">✓</span>
+                <span><span className="font-bold">Стратегическое развитие и</span> планирование</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 text-xl">✓</span>
+                <span>Менторинг, проверка фин.модели, работа с инвестициями и структурой сделок</span>
+              </li>
+            </ul>
           </div>
         </section>
 
-        {/* Additional Info Section */}
-        <section className="text-center mb-16">
-          <div className="max-w-2xl mx-auto">
-            <h3 className="text-2xl text-brand-primary mb-6">
-              <span className="font-bold">Сопровождаю венчурные и технологические проекты более 15 лет</span> — от запуска до масштабирования
-            </h3>
-            
-            <h2 className="text-3xl font-bold text-brand-primary mb-8">
-              Моя экспертиза
-            </h2>
-            
-            <div className="space-y-6 max-w-5xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      Построение <span className="font-bold">устойчивой финансовой архитектуры</span> бизнеса
-                    </h3>
-                  </div>
-                </div>
+        {/* How I Work Section */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-brand-primary mb-8">
+            Как я работаю
+          </h2>
+          
+          <div className="space-y-4 max-w-4xl mx-auto">
+            <ul className="space-y-4 text-lg">
+              <li className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 text-xl">✓</span>
+                <span>Включаюсь в проект <span className="font-bold">лично</span>, если это действительно необходимо</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 text-xl">✓</span>
+                <span>Подключаю <span className="font-bold">узкий круг профильных экспертов</span> под многоплановые задачи</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 text-xl">✓</span>
+                <span>Обладаю <span className="font-bold">системным и интегративным мышлением</span> — помогаю взглянуть на бизнес иначе, подсветить возможности, оцифровать и усилить</span>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      <span className="font-bold">Стратегическое развитие</span> и планирование
-                    </h3>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1">
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      Менторинг, проверка фин.модели, работа с инвестициями и структурой сделок
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <h2 className="text-3xl font-bold text-brand-primary mb-8 mt-16">
-              Как я работаю
-            </h2>
-            
-            <div className="space-y-6 max-w-5xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      Включаюсь в проект <span className="font-bold">лично</span>, если это действительно необходимо
-                    </h3>
-                  </div>
-                </div>
-
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      Подключаю <span className="font-bold">узкий круг проверенных экспертов</span> под многоплановые задачи
-                    </h3>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1">
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      Обладаю <span className="font-bold">системным и нестандартным мышлением</span> — помогаю взглянуть на бизнес иначе, подсветить возможности, оцифровать и усилить
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <h2 className="text-3xl font-bold text-brand-primary mb-8 mt-16">
-              Мой подход
-            </h2>
-            
-            <div className="space-y-6 max-w-5xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      <span className="font-bold">Финансовая модель помогает увидеть, как может развиваться бизнес.</span>
-                    </h3>
-                  </div>
-                </div>
-
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      Это не просто проекция — это способ подумать вперёд, увидеть риски и возможности.
-                    </h3>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1">
-                <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-100 h-full">
-                  <div>
-                    <h3 className="text-brand-primary text-xl mb-2">
-                      <span className="font-bold">Понять — значит управлять.</span>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
+        {/* My Approach Section */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-brand-primary mb-8">
+            Мой подход
+          </h2>
+          
+          <div className="space-y-6 max-w-4xl mx-auto text-text-primary">
+            <p className="text-lg leading-relaxed">
+              <span className="font-bold">Финансовая модель помогает увидеть, как может развиваться бизнес.</span>
+            </p>
+            <p className="text-lg leading-relaxed">
+              Это не просто проекция — это способ подумать вперёд, увидеть риски и возможности.
+            </p>
+            <p className="text-lg leading-relaxed">
+              <span className="font-bold">Понять — значит управлять.</span>
+            </p>
           </div>
         </section>
 

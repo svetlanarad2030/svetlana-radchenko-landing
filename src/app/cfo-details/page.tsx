@@ -107,12 +107,28 @@ export default function CfoDetailsPage(): ReactElement {
               </div>
               
               {/* Text on the right */}
-              <div className="text-text-primary">
+              <div className="space-y-6 text-text-primary">
                 <p className="text-lg leading-relaxed">
-                  Работаю как внешний CFO в проектах, где нужен контроль, стратегическое развитие, 
-                  оценка сторонних проектов и помощь в проведении сделок M&A. Настрою систему, 
-                  помогу собственнику минимизировать ручное управление, предложу решения по оптимизации 
-                  работы компании в соответствии с поставленными целями.
+                  <span className="font-bold">Работаю как внешний CFO</span> в проектах, где важно не просто считать — а <span className="font-bold">строить систему и управлять финансами стратегически.</span>
+                </p>
+                
+                <ul className="space-y-3 text-lg ml-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-green-600 mt-1 text-xl">✓</span>
+                    <span>Настроим <span className="font-bold">систему планирования и контроля,</span></span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-green-600 mt-1 text-xl">✓</span>
+                    <span>Помогу собственнику <span className="font-bold">минимизировать ручное управление,</span></span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-green-600 mt-1 text-xl">✓</span>
+                    <span>Предложу решения по оптимизации работы компании в соответствии с поставленными целями</span>
+                  </li>
+                </ul>
+                
+                <p className="text-lg leading-relaxed">
+                  <span className="font-bold">Фокус — на устойчивом росте, прозрачности и управляемости.</span>
                 </p>
               </div>
             </div>
