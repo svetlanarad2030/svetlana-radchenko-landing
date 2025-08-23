@@ -231,83 +231,83 @@ export default function EnglishContactPage(): ReactElement {
 
             {/* QR Codes */}
             <div className="bg-white rounded-2xl p-8 shadow-sm h-full">
-                <h3 className="text-2xl font-bold text-brand-primary mb-6">
-                  QR codes for quick access
-                </h3>
-                
-                <div className="grid grid-cols-1 gap-6">
-                  {socialLinks.map((social) => (
-                    <a
-                      key={social.id}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-200 group"
-                    >
-                      <div className="relative w-20 h-20 flex-shrink-0">
-                        <Image
-                          src={social.icon}
-                          alt={`${social.name} QR Code`}
-                          fill
-                          className="object-contain group-hover:scale-105 transition-transform duration-200"
-                        />
+              <h3 className="text-2xl font-bold text-brand-primary mb-6">
+                QR codes for quick access
+              </h3>
+              
+              <div className="grid grid-cols-1 gap-6">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.id}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all duration-200 group"
+                  >
+                    <div className="relative w-20 h-20 flex-shrink-0">
+                      <Image
+                        src={social.icon}
+                        alt={`${social.name} QR Code`}
+                        fill
+                        className="object-contain group-hover:scale-105 transition-transform duration-200"
+                      />
+                    </div>
+                    <div>
+                      <div className="text-text-primary font-semibold text-lg">
+                        {social.name}
                       </div>
-                      <div>
-                        <div className="text-text-primary font-semibold text-lg">
-                          {social.name}
-                        </div>
-                        <div className="text-text-secondary text-sm">
-                          Scan QR code
-                        </div>
-                        <div className="text-text-secondary text-xs mt-1">
-                          {social.url.replace('https://', '').replace('mailto:', '')}
-                        </div>
+                      <div className="text-text-secondary text-sm">
+                        Scan QR code
                       </div>
-                    </a>
-                  ))}
-                </div>
+                      <div className="text-text-secondary text-xs mt-1">
+                        {social.url.replace('https://', '').replace('mailto:', '')}
+                      </div>
+                    </div>
+                  </a>
+                ))}
               </div>
+            </div>
 
             {/* Direct Contact */}
             <div className="bg-white rounded-2xl p-8 shadow-sm h-full">
-                <h3 className="text-2xl font-bold text-brand-primary mb-6">
-                  Direct Contact
-                </h3>
+              <h3 className="text-2xl font-bold text-brand-primary mb-6">
+                Direct Contact
+              </h3>
+              
+              <div className="space-y-4 text-text-secondary">
+                <div>
+                  <div className="font-semibold text-text-primary">Email</div>
+                  <a 
+                    href="mailto:finmodelguru@gmail.com"
+                    className="hover:text-brand-primary transition-colors"
+                  >
+                    finmodelguru@gmail.com
+                  </a>
+                </div>
                 
-                <div className="space-y-4 text-text-secondary">
-                  <div>
-                    <div className="font-semibold text-text-primary">Email</div>
-                    <a 
-                      href="mailto:finmodelguru@gmail.com"
-                      className="hover:text-brand-primary transition-colors"
-                    >
-                      finmodelguru@gmail.com
-                    </a>
-                  </div>
-                  
-                  <div>
-                    <div className="font-semibold text-text-primary">Phone</div>
-                    <a 
-                      href="tel:+79262240270"
-                      className="hover:text-brand-primary transition-colors"
-                    >
-                      +7 926 2240270
-                    </a>
-                  </div>
-                  
-                  <div>
-                    <div className="font-semibold text-text-primary">Telegram</div>
-                    <a 
-                      href="https://t.me/FinModelGuru"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-brand-primary transition-colors"
-                    >
-                      @FinModelGuru
-                    </a>
-                  </div>
+                <div>
+                  <div className="font-semibold text-text-primary">Phone</div>
+                  <a 
+                    href="tel:+79262240270"
+                    className="hover:text-brand-primary transition-colors"
+                  >
+                    +7 926 2240270
+                  </a>
+                </div>
+                
+                <div>
+                  <div className="font-semibold text-text-primary">Telegram</div>
+                  <a 
+                    href="https://t.me/FinModelGuru"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-brand-primary transition-colors"
+                  >
+                    @FinModelGuru
+                  </a>
                 </div>
               </div>
+            </div>
           </div>
 
           {/* Call to Action */}
