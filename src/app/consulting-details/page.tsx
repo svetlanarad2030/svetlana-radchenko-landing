@@ -92,32 +92,33 @@ export default function ConsultingDetailsPage(): ReactElement {
           </p>
         </section>
 
-        {/* Image Section */}
-        <section className="mb-16 text-center">
-          <div className="relative w-full max-w-md mx-auto">
-            <Image
-              src="/images/image17.jpeg"
-              alt="Финансовый консалтинг и менторство"
-              width={400}
-              height={200}
-              className="rounded-2xl shadow-lg w-full h-auto"
-            />
-          </div>
-        </section>
-
-        {/* Блок 2: Краткое введение */}
+        {/* Блок 2: Изображение + введение */}
         <section className="mb-16">
           <div className="bg-white rounded-2xl p-8 shadow-sm">
-            <div className="space-y-6 text-text-primary">
-              <p className="text-lg leading-relaxed">
-                Работаю с предпринимателями, которым важно разобраться с финансовой стороной бизнеса: 
-                увидеть и почувствовать свои цифры, понять потенциал, чтобы в итоге влиять на результат.
-              </p>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Image on the left */}
+              <div className="relative">
+                <Image
+                  src="/images/image17.jpeg"
+                  alt="Финансовый консалтинг и менторство"
+                  width={400}
+                  height={200}
+                  className="rounded-2xl shadow-lg w-full h-auto"
+                />
+              </div>
               
-              <p className="text-lg leading-relaxed">
-                Каждый запрос уникален — и решение тоже. Включаюсь лично, при необходимости привлекаю 
-                узкий круг экспертов.
-              </p>
+              {/* Text on the right */}
+              <div className="space-y-6 text-text-primary">
+                <p className="text-lg leading-relaxed">
+                  Работаю с предпринимателями, которым важно разобраться с финансовой стороной бизнеса: 
+                  увидеть и почувствовать свои цифры, понять потенциал, чтобы в итоге влиять на результат.
+                </p>
+                
+                <p className="text-lg leading-relaxed">
+                  Каждый запрос уникален — и решение тоже. Включаюсь лично, при необходимости привлекаю 
+                  узкий круг экспертов.
+                </p>
+              </div>
             </div>
           </div>
         </section>

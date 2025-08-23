@@ -92,32 +92,33 @@ export default function EnglishConsultingDetailsPage(): ReactElement {
           </p>
         </section>
 
-        {/* Image Section */}
-        <section className="mb-16 text-center">
-          <div className="relative w-full max-w-md mx-auto">
-            <Image
-              src="/images/image17.jpeg"
-              alt="Financial consulting and mentoring"
-              width={400}
-              height={200}
-              className="rounded-2xl shadow-lg w-full h-auto"
-            />
-          </div>
-        </section>
-
-        {/* Block 2: Brief Introduction */}
+        {/* Block 2: Image + Introduction */}
         <section className="mb-16">
           <div className="bg-white rounded-2xl p-8 shadow-sm">
-            <div className="space-y-6 text-text-primary">
-              <p className="text-lg leading-relaxed">
-                I work with entrepreneurs who value understanding the financial side of business: 
-                see and feel their numbers, understand potential, to ultimately influence results.
-              </p>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Image on the left */}
+              <div className="relative">
+                <Image
+                  src="/images/image17.jpeg"
+                  alt="Financial consulting and mentoring"
+                  width={400}
+                  height={200}
+                  className="rounded-2xl shadow-lg w-full h-auto"
+                />
+              </div>
               
-              <p className="text-lg leading-relaxed">
-                Each request is unique — and so is the solution. I get personally involved, 
-                and when necessary, engage a narrow circle of experts.
-              </p>
+              {/* Text on the right */}
+              <div className="space-y-6 text-text-primary">
+                <p className="text-lg leading-relaxed">
+                  I work with entrepreneurs who value understanding the financial side of business: 
+                  see and feel their numbers, understand potential, to ultimately influence results.
+                </p>
+                
+                <p className="text-lg leading-relaxed">
+                  Each request is unique — and so is the solution. I get personally involved, 
+                  and when necessary, engage a narrow circle of experts.
+                </p>
+              </div>
             </div>
           </div>
         </section>

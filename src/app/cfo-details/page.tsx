@@ -91,28 +91,31 @@ export default function CfoDetailsPage(): ReactElement {
           </p>
         </section>
 
-        {/* Image Section */}
-        <section className="mb-16 text-center">
-          <div className="relative w-full max-w-md mx-auto">
-            <Image
-              src="/images/image18.jpeg"
-              alt="Финансовый директор на аутсорсе и сопровождение сделок"
-              width={400}
-              height={200}
-              className="rounded-2xl shadow-lg w-full h-auto"
-            />
-          </div>
-        </section>
-
-        {/* Блок 2: Введение */}
+        {/* Блок 2: Изображение + введение */}
         <section className="mb-16">
           <div className="bg-white rounded-2xl p-8 shadow-sm">
-            <p className="text-lg leading-relaxed text-text-primary">
-              Работаю как внешний CFO в проектах, где нужен контроль, стратегическое развитие, 
-              оценка сторонних проектов и помощь в проведении сделок M&A. Настрою систему, 
-              помогу собственнику минимизировать ручное управление, предложу решения по оптимизации 
-              работы компании в соответствии с поставленными целями.
-            </p>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Image on the left */}
+              <div className="relative">
+                <Image
+                  src="/images/image18.jpeg"
+                  alt="Финансовый директор на аутсорсе и сопровождение сделок"
+                  width={400}
+                  height={200}
+                  className="rounded-2xl shadow-lg w-full h-auto"
+                />
+              </div>
+              
+              {/* Text on the right */}
+              <div className="text-text-primary">
+                <p className="text-lg leading-relaxed">
+                  Работаю как внешний CFO в проектах, где нужен контроль, стратегическое развитие, 
+                  оценка сторонних проектов и помощь в проведении сделок M&A. Настрою систему, 
+                  помогу собственнику минимизировать ручное управление, предложу решения по оптимизации 
+                  работы компании в соответствии с поставленными целями.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 

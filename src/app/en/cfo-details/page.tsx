@@ -91,28 +91,31 @@ export default function EnglishCfoDetailsPage(): ReactElement {
           </p>
         </section>
 
-        {/* Image Section */}
-        <section className="mb-16 text-center">
-          <div className="relative w-full max-w-md mx-auto">
-            <Image
-              src="/images/image18.jpeg"
-              alt="Outsourced CFO and deal support"
-              width={400}
-              height={200}
-              className="rounded-2xl shadow-lg w-full h-auto"
-            />
-          </div>
-        </section>
-
-        {/* Block 2: Introduction */}
+        {/* Block 2: Image + Introduction */}
         <section className="mb-16">
           <div className="bg-white rounded-2xl p-8 shadow-sm">
-            <p className="text-lg leading-relaxed text-text-primary">
-              I work as an external CFO in projects that need control, strategic development, 
-              evaluation of third-party projects and help in conducting M&A deals. I will set up 
-              the system, help the owner minimize manual management, propose solutions for optimizing 
-              company operations in accordance with set goals.
-            </p>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Image on the left */}
+              <div className="relative">
+                <Image
+                  src="/images/image18.jpeg"
+                  alt="Outsourced CFO and deal support"
+                  width={400}
+                  height={200}
+                  className="rounded-2xl shadow-lg w-full h-auto"
+                />
+              </div>
+              
+              {/* Text on the right */}
+              <div className="text-text-primary">
+                <p className="text-lg leading-relaxed">
+                  I work as an external CFO in projects that need control, strategic development, 
+                  evaluation of third-party projects and help in conducting M&A deals. I will set up 
+                  the system, help the owner minimize manual management, propose solutions for optimizing 
+                  company operations in accordance with set goals.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
