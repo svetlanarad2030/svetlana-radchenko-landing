@@ -180,7 +180,7 @@ export default function AboutPage(): ReactElement {
                     >
                       Каталог купольных конструкций для глэмпинга и кемпинга
                     </a><br />
-                    <span className="text-sm text-text-secondary">Партнерская программа и каталог решений для глэмпинг проектов</span>
+                    <span className="text-sm text-text-secondary">Партнеры Freedom</span>
                   </span>
                 </li>
               </ul>

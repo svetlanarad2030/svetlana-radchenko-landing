@@ -180,7 +180,7 @@ export default function EnglishAboutPage(): ReactElement {
                     >
                       Dome Structures Catalog for Glamping and Camping
                     </a><br />
-                    <span className="text-sm text-text-secondary">Partnership program and catalog of solutions for glamping projects</span>
+                    <span className="text-sm text-text-secondary">Freedom Partners</span>
                   </span>
                 </li>
               </ul>
