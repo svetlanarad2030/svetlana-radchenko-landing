@@ -24,7 +24,7 @@ export default function EnglishAboutPage(): ReactElement {
       <main className="bg-bg-primary">
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Hero Section */}
-        <section className="mb-16">
+        <section className="mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-brand-primary mb-4 text-center">
             About Me & How I Can Help
           </h1>
@@ -32,7 +32,7 @@ export default function EnglishAboutPage(): ReactElement {
             <span className="font-bold">Finance practitioner with 26+ years of experience</span> in financial management and project development, including international and public companies.
           </p>
           
-          <ul className="space-y-1 text-lg text-text-primary">
+          <ul className="space-y-0 text-lg text-text-primary">
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
               <span><span className="font-bold">Ex-CFO</span> of Bioprocess Group and Irish public company <span className="font-bold">Ovoca Bio plc</span></span>
@@ -55,11 +55,11 @@ export default function EnglishAboutPage(): ReactElement {
             <span className="font-bold">Supporting venture and technology projects for over 15 years</span> — from launch to scaling.
           </p>
           
-          <h2 className="text-2xl font-bold text-brand-primary mb-4 mt-6">
+          <h2 className="text-2xl font-bold text-brand-primary mb-2 mt-4">
             My Expertise
           </h2>
           
-          <ul className="space-y-1 text-lg text-text-primary">
+          <ul className="space-y-0 text-lg text-text-primary">
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
               <span><span className="font-bold">Building sustainable financial architecture</span> of business</span>
@@ -74,11 +74,11 @@ export default function EnglishAboutPage(): ReactElement {
             </li>
           </ul>
           
-          <h2 className="text-2xl font-bold text-brand-primary mb-4 mt-6">
+          <h2 className="text-2xl font-bold text-brand-primary mb-2 mt-4">
             How I Work
           </h2>
           
-          <ul className="space-y-1 text-lg text-text-primary">
+          <ul className="space-y-0 text-lg text-text-primary">
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
               <span>I get <span className="font-bold">personally involved</span> in projects if it's really necessary</span>
@@ -93,30 +93,30 @@ export default function EnglishAboutPage(): ReactElement {
             </li>
           </ul>
           
-          <h2 className="text-2xl font-bold text-brand-primary mb-4 mt-6">
+          <h2 className="text-2xl font-bold text-brand-primary mb-2 mt-4">
             My Approach
           </h2>
           
-          <div className="space-y-4 text-text-primary">
-            <p className="text-lg leading-relaxed">
+          <div className="space-y-0 text-text-primary">
+            <p className="text-lg leading-tight">
               <span className="font-bold">A financial model helps see how a business can develop.</span>
             </p>
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-tight -mt-6">
               It's not just a projection — it's a way to think ahead, see risks and opportunities.
             </p>
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-tight">
               <span className="font-bold">To understand means to manage.</span>
             </p>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="text-center mb-16">
+        <section className="text-center mb-6">
           <div className="max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-brand-primary mb-6">
+            <h3 className="text-2xl font-bold text-brand-primary mb-3">
               Ready to discuss your project?
             </h3>
-            <p className="text-lg text-text-secondary mb-8">
+            <p className="text-lg text-text-secondary mb-4">
               Tell me about your business challenges, and I'll help find optimal solutions
             </p>
             <ConsultationButton
@@ -132,7 +132,7 @@ export default function EnglishAboutPage(): ReactElement {
 
         {/* Partners Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-brand-primary mb-8 text-center">
+          <h2 className="text-3xl font-bold text-brand-primary mb-4 text-center">
             Partners and Clients
           </h2>
 
