@@ -39,7 +39,7 @@ export default function AboutPage(): ReactElement {
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
-              <span><span className="font-bold">Кандидат экономических наук</span>, преподаватель, ментор и эксперт фонда «<a href="https://fond-navstrechu.ru/programmy/navstrechu-impakt-investicziyam/" target="_blank" rel="noopener noreferrer" className="text-brand-primary hover:underline font-bold">Навстречу переменам</a>»</span>
+              <span><span className="font-bold">Кандидат экономических наук</span>, преподаватель, ментор и эксперт фонда «<span className="font-bold">Навстречу переменам</span>»</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
@@ -291,6 +291,20 @@ export default function AboutPage(): ReactElement {
                       Как привлечь партнёров и финансирование в проект?
                     </a><br />
                     <span className="text-sm text-text-secondary">Вебинар с финансовым директором, часть 2</span>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-lg" style={{color: '#3E5B7A'}}>💼</span>
+                  <span>
+                    <a 
+                      href="https://freedome.pro/partners/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-primary hover:underline font-medium"
+                    >
+                      Каталог купольных конструкций для глэмпинга и кемпинга
+                    </a><br />
+                    <span className="text-sm text-text-secondary">Партнерская программа и каталог решений для глэмпинг проектов</span>
                   </span>
                 </li>
               </ul>

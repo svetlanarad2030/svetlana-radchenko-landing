@@ -39,7 +39,7 @@ export default function EnglishAboutPage(): ReactElement {
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
-              <span><span className="font-bold">PhD in Economics</span>, lecturer, mentor and expert at <a href="https://fond-navstrechu.ru/programmy/navstrechu-impakt-investicziyam/" target="_blank" rel="noopener noreferrer" className="text-brand-primary hover:underline font-bold">Towards Change</a> foundation</span>
+              <span><span className="font-bold">PhD in Economics</span>, lecturer, mentor and expert at <span className="font-bold">Towards Change</span> foundation</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
@@ -291,6 +291,20 @@ export default function EnglishAboutPage(): ReactElement {
                       How to Attract Partners and Funding to a Project?
                     </a><br />
                     <span className="text-sm text-text-secondary">Webinar with CFO, Part 2</span>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-lg" style={{color: '#3E5B7A'}}>💼</span>
+                  <span>
+                    <a 
+                      href="https://freedome.pro/partners/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-primary hover:underline font-medium"
+                    >
+                      Dome Structures Catalog for Glamping and Camping
+                    </a><br />
+                    <span className="text-sm text-text-secondary">Partnership program and catalog of solutions for glamping projects</span>
                   </span>
                 </li>
               </ul>
