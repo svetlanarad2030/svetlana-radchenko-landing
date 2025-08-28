@@ -29,7 +29,7 @@ export default function AboutPage(): ReactElement {
             Кто я и чем могу быть полезна
           </h1>
           <p className="text-lg leading-relaxed text-text-primary mb-4">
-            <span className="font-bold">Финансист-практик с 26+ летним опытом</span> в управлении финансами и развитием проектов, в том числе в международных и публичных компаниях.
+            <span className="font-bold">Финансист-практик с 26+ летним опытом</span> в управлении финансами и развитием проектов, в том числе в международных и публичных компаниях. <a href="https://skolkovocid.ru/experts/svetlana-radchenko/" target="_blank" rel="noopener noreferrer" className="text-brand-primary hover:underline">Официальный эксперт Сколково</a> в области корпоративных финансов.
           </p>
           
           <ul className="space-y-0 text-lg text-text-primary">
@@ -39,7 +39,7 @@ export default function AboutPage(): ReactElement {
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
-              <span><span className="font-bold">Кандидат экономических наук</span>, преподаватель, ментор и эксперт фонда «<span className="font-bold">Навстречу переменам</span>»</span>
+              <span><span className="font-bold">Кандидат экономических наук</span>, преподаватель, ментор и эксперт фонда «<a href="https://fond-navstrechu.ru/programmy/navstrechu-impakt-investicziyam/" target="_blank" rel="noopener noreferrer" className="text-brand-primary hover:underline font-bold">Навстречу переменам</a>»</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
@@ -130,9 +130,200 @@ export default function AboutPage(): ReactElement {
           </div>
         </section>
 
+        {/* Publications and Additional Information Section */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-brand-primary mb-2 mt-4 text-center">
+            Дополнительная информация, публикации, полезные материалы
+          </h2>
+
+          <div className="max-w-4xl mx-auto space-y-8">
+            {/* Expert Profiles */}
+            <div>
+              <h3 className="text-xl font-semibold text-brand-primary mb-4">
+                Экспертные профили
+              </h3>
+              <ul className="space-y-3 text-text-primary">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-lg" style={{color: '#3E5B7A'}}>🏢</span>
+                  <span>
+                    <a 
+                      href="https://skolkovocid.ru/experts/svetlana-radchenko/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-primary hover:underline font-medium"
+                    >
+                      Клуб независимых директоров Сколково
+                    </a>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-lg" style={{color: '#3E5B7A'}}>🚀</span>
+                  <span>
+                    <a 
+                      href="https://fond-navstrechu.ru/programmy/navstrechu-impakt-investicziyam/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-primary hover:underline font-medium"
+                    >
+                      Акселерационная программа «Навстречу импакт-инвестициям»
+                    </a>, фонд Навстречу Переменам
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Online Courses */}
+            <div>
+              <h3 className="text-xl font-semibold text-brand-primary mb-4">
+                Онлайн-образование
+              </h3>
+              <ul className="space-y-3 text-text-primary">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-lg" style={{color: '#3E5B7A'}}>📚</span>
+                  <span>
+                    <a 
+                      href="https://stepik.org/193124" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-primary hover:underline font-medium"
+                    >
+                      Онлайн-курс «Пять шагов к финансовой модели»
+                    </a> (Stepik, 2021)
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Professional Publications */}
+            <div>
+              <h3 className="text-xl font-semibold text-brand-primary mb-4">
+                Публикации в профессиональных изданиях
+              </h3>
+              <ul className="space-y-4 text-text-primary">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-lg" style={{color: '#3E5B7A'}}>📄</span>
+                  <span>
+                    <a 
+                      href="https://ao-journal.ru/cfo-kak-partner-soveta-direktorov" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-primary hover:underline font-medium"
+                    >
+                      CFO как партнер совета директоров
+                    </a><br />
+                    <span className="text-sm text-text-secondary">Журнал «Акционерное общество: вопросы корпоративного управления»</span>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-lg" style={{color: '#3E5B7A'}}>📄</span>
+                  <span>
+                    <a 
+                      href="https://ao-journal.ru/faktor-g-v-esg-kontseptsii" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-primary hover:underline font-medium"
+                    >
+                      Фактор G в ESG-концепции
+                    </a><br />
+                    <span className="text-sm text-text-secondary">Журнал «Акционерное общество: вопросы корпоративного управления»</span>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-lg" style={{color: '#3E5B7A'}}>📄</span>
+                  <span>
+                    <a 
+                      href="https://www.b-soc.ru/pppublikacii/nastoyashhee-i-budushhee-korporativnogo-upravleniya/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-primary hover:underline font-medium"
+                    >
+                      Настоящее и будущее корпоративного управления
+                    </a><br />
+                    <span className="text-sm text-text-secondary">Журнал и портал «Бизнес и Общество», 28.04.2022</span>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-lg" style={{color: '#3E5B7A'}}>📄</span>
+                  <span>
+                    <a 
+                      href="https://secretmag.ru/opinions/nuzhnye-lyudi-pochemu-v-rossii-tak-malo-nezavisimykh-sovetov-direktorov.htm" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-primary hover:underline font-medium"
+                    >
+                      «Нужные люди. Почему в России так мало действительно независимых советов директоров…»
+                    </a><br />
+                    <span className="text-sm text-text-secondary">Secretmag, 30.12.2020</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Industry Case Studies */}
+            <div>
+              <h3 className="text-xl font-semibold text-brand-primary mb-4">
+                Отраслевые кейсы и практические материалы
+              </h3>
+              <ul className="space-y-4 text-text-primary">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-lg" style={{color: '#3E5B7A'}}>💼</span>
+                  <span>
+                    <a 
+                      href="https://freedome.pro/kak-sostavit-finansovuyu-model-dlya-glempinga/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-primary hover:underline font-medium"
+                    >
+                      Как составить финансовую модель для глэмпинга?
+                    </a><br />
+                    <span className="text-sm text-text-secondary">Практическое руководство по финансовому моделированию в сфере гостеприимства</span>
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-lg" style={{color: '#3E5B7A'}}>💼</span>
+                  <span>
+                    <a 
+                      href="https://freedome.pro/kak-privlech-partnerov-i-finansirovanie-v-proekt-vebinar-s-finansovym-direktorom-ch-2/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-primary hover:underline font-medium"
+                    >
+                      Как привлечь партнёров и финансирование в проект?
+                    </a><br />
+                    <span className="text-sm text-text-secondary">Вебинар с финансовым директором, часть 2</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* International Events */}
+            <div>
+              <h3 className="text-xl font-semibold text-brand-primary mb-4">
+                Международные мероприятия и выступления
+              </h3>
+              <ul className="space-y-3 text-text-primary">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1 text-lg" style={{color: '#3E5B7A'}}>🌍</span>
+                  <span>
+                    <a 
+                      href="https://expoday.online/page30144905.html" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-primary hover:underline font-medium"
+                    >
+                      Круглый стол «ESG-стратегия как ключ к формированию устойчивых деловых отношений»
+                    </a><br />
+                    <span className="text-sm text-text-secondary">Зарубеж-Экспо, Сербия, 8.09.2022</span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         {/* Partners Section */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-brand-primary mb-4 text-center">
+          <h2 className="text-2xl font-bold text-brand-primary mb-2 mt-4 text-center">
             Партнеры и клиенты
           </h2>
 
