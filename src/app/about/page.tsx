@@ -29,17 +29,17 @@ export default function AboutPage(): ReactElement {
             Кто я и чем могу быть полезна
           </h1>
           <p className="text-lg leading-relaxed text-text-primary mb-4">
-            <span className="font-bold">Финансист-практик с 26+ летним опытом</span> в управлении финансами и развитием проектов, в том числе в международных и публичных компаниях. <a href="https://skolkovocid.ru/experts/svetlana-radchenko/" target="_blank" rel="noopener noreferrer" className="text-brand-primary hover:underline">Официальный эксперт Сколково</a> в области корпоративных финансов.
+            <span className="font-bold">Финансист-практик с 26+ летним опытом</span> в управлении финансами и развитием проектов, в том числе в международных и публичных компаниях.
           </p>
           
           <ul className="space-y-0 text-lg text-text-primary">
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
-              <span><span className="font-bold">Ex-CFO</span> группы компаний «Биопроцесс» и публичной ирландской компании «<span className="font-bold">Ovoca Bio plc</span>»</span>
+              <span><span className="font-bold">Ex-CFO</span> группы компаний «Биопроцесс» и публичной ирландской компании «Ovoca Bio plc»</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
-              <span><span className="font-bold">Кандидат экономических наук</span>, преподаватель, ментор и эксперт фонда «<span className="font-bold">Навстречу переменам</span>»</span>
+              <span><span className="font-bold">Кандидат экономических наук</span>, преподаватель, ментор и эксперт фонда «Навстречу переменам»</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
@@ -66,7 +66,7 @@ export default function AboutPage(): ReactElement {
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
-              <span><span className="font-bold">Стратегическое развитие и</span> планирование</span>
+              <span><span className="font-bold">Стратегическое развитие и планирование</span></span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
@@ -99,9 +99,7 @@ export default function AboutPage(): ReactElement {
           
           <div className="space-y-0 text-text-primary">
             <p className="text-lg leading-tight">
-              <span className="font-bold">Финансовая модель помогает увидеть, как может развиваться бизнес.</span>
-            </p>
-            <p className="text-lg leading-tight -mt-6">
+              <span className="font-bold">Финансовая модель помогает увидеть, как может развиваться бизнес.</span><br />
               Это не просто проекция — это способ подумать вперёд, увидеть риски и возможности.
             </p>
             <p className="text-lg leading-tight">
@@ -178,9 +176,8 @@ export default function AboutPage(): ReactElement {
                       rel="noopener noreferrer"
                       className="text-brand-primary hover:underline font-medium"
                     >
-                      Каталог купольных конструкций для глэмпинга и кемпинга
-                    </a><br />
-                    <span className="text-sm text-text-secondary">Партнеры Freedom</span>
+                      Партнеры Freedom
+                    </a>
                   </span>
                 </li>
               </ul>

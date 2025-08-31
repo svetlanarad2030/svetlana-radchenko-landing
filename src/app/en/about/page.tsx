@@ -29,17 +29,17 @@ export default function EnglishAboutPage(): ReactElement {
             About Me & How I Can Help
           </h1>
           <p className="text-lg leading-relaxed text-text-primary mb-4">
-            <span className="font-bold">Finance practitioner with 26+ years of experience</span> in financial management and project development, including international and public companies. <a href="https://skolkovocid.ru/experts/svetlana-radchenko/" target="_blank" rel="noopener noreferrer" className="text-brand-primary hover:underline">Official Skolkovo expert</a> in corporate finance.
+            <span className="font-bold">Finance practitioner with 26+ years of experience</span> in financial management and project development, including international and public companies.
           </p>
           
           <ul className="space-y-0 text-lg text-text-primary">
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
-              <span><span className="font-bold">Ex-CFO</span> of Bioprocess Group and Irish public company <span className="font-bold">Ovoca Bio plc</span></span>
+              <span><span className="font-bold">Ex-CFO</span> of Bioprocess Group and Irish public company Ovoca Bio plc</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
-              <span><span className="font-bold">PhD in Economics</span>, lecturer, mentor and expert at <span className="font-bold">Towards Change</span> foundation</span>
+              <span><span className="font-bold">PhD in Economics</span>, lecturer, mentor and expert at Towards Change foundation</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
@@ -66,7 +66,7 @@ export default function EnglishAboutPage(): ReactElement {
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
-              <span><span className="font-bold">Strategic development and</span> planning</span>
+              <span><span className="font-bold">Strategic development and planning</span></span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 text-xl" style={{color: '#3E5B7A'}}>✓</span>
@@ -99,9 +99,7 @@ export default function EnglishAboutPage(): ReactElement {
           
           <div className="space-y-0 text-text-primary">
             <p className="text-lg leading-tight">
-              <span className="font-bold">A financial model helps see how a business can develop.</span>
-            </p>
-            <p className="text-lg leading-tight -mt-6">
+              <span className="font-bold">A financial model helps see how a business can develop.</span><br />
               It's not just a projection — it's a way to think ahead, see risks and opportunities.
             </p>
             <p className="text-lg leading-tight">
@@ -178,9 +176,8 @@ export default function EnglishAboutPage(): ReactElement {
                       rel="noopener noreferrer"
                       className="text-brand-primary hover:underline font-medium"
                     >
-                      Dome Structures Catalog for Glamping and Camping
-                    </a><br />
-                    <span className="text-sm text-text-secondary">Freedom Partners</span>
+                      Freedom Partners
+                    </a>
                   </span>
                 </li>
               </ul>
