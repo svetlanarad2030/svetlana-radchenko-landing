@@ -5,7 +5,7 @@
 
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { ReactElement } from 'react';
+import { ReactElement, Suspense } from 'react';
 import YandexMetrika from '@/components/analytics/YandexMetrika';
 import '@/styles/globals.css';
 
@@ -215,7 +215,12 @@ export default function RootLayout({ children }: RootLayoutProps): ReactElement 
         />
       </head>
       <body className={`${inter.className} antialiased min-h-screen flex flex-col`}>
-        <noscript><div><img src="https://mc.yandex.ru/watch/104048503" style={{position:'absolute', left:'-9999px'}} alt="" /></div></noscript>
+        <noscript>
+          <div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="https://mc.yandex.ru/watch/104048503" style={{position:'absolute', left:'-9999px'}} alt="" />
+          </div>
+        </noscript>
         {/* Skip to main content link for accessibility */}
         <a
           href="#main-content"
@@ -230,7 +235,9 @@ export default function RootLayout({ children }: RootLayoutProps): ReactElement 
         </main>
 
         {/* SPA route hit tracking for Yandex.Metrika */}
-        <YandexMetrika />
+        <Suspense fallback={null}>
+          <YandexMetrika />
+        </Suspense>
         
         {/* Footer */}
         <footer className="bg-brand-accent text-white py-8 px-4">
