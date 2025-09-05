@@ -6,6 +6,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ReactElement } from 'react';
+import YandexMetrika from '@/components/analytics/YandexMetrika';
 import '@/styles/globals.css';
 
 const inter = Inter({ 
@@ -115,36 +116,17 @@ export default function RootLayout({ children }: RootLayoutProps): ReactElement 
           type="text/javascript"
           dangerouslySetInnerHTML={{
             __html: `
-              (function(m,e,t,r,i,k,a){
-                m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-                m[i].l=1*new Date();
-                for (var j = 0; j < document.scripts.length; j++) {
-                  if (document.scripts[j].src === r) { return; }
-                }
-                k=e.createElement(t),a=e.getElementsByTagName(t)[0];
-                k.async=1; k.src=r; a.parentNode.insertBefore(k,a)
-              })(window, document,'script','https://mc.yandex.ru/metrika/tag.js','ym');
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104048503', 'ym');
 
-              ym(103872130, 'init', {
-                ssr:true,
-                webvisor:true,
-                clickmap:true,
-                ecommerce:"dataLayer",
-                accurateTrackBounce:true,
-                trackLinks:true
-              });
+    ym(104048503, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
             `
           }}
         />
-        <noscript>
-          <div>
-            <img 
-              src="https://mc.yandex.ru/watch/103872130" 
-              style={{position:'absolute', left:'-9999px'}} 
-              alt="" 
-            />
-          </div>
-        </noscript>
         
         {/* Structured Data */}
         <script
@@ -233,6 +215,7 @@ export default function RootLayout({ children }: RootLayoutProps): ReactElement 
         />
       </head>
       <body className={`${inter.className} antialiased min-h-screen flex flex-col`}>
+        <noscript><div><img src="https://mc.yandex.ru/watch/104048503" style={{position:'absolute', left:'-9999px'}} alt="" /></div></noscript>
         {/* Skip to main content link for accessibility */}
         <a
           href="#main-content"
@@ -245,6 +228,9 @@ export default function RootLayout({ children }: RootLayoutProps): ReactElement 
         <main id="main-content" className="flex-grow">
           {children}
         </main>
+
+        {/* SPA route hit tracking for Yandex.Metrika */}
+        <YandexMetrika />
         
         {/* Footer */}
         <footer className="bg-brand-accent text-white py-8 px-4">
