@@ -9,7 +9,7 @@ declare global {
   }
 }
 
-const YANDEX_COUNTER_ID = 104048503;
+const YANDEX_COUNTER_ID = 103872130;
 
 export default function YandexMetrika(): null {
   const pathname = usePathname();

@@ -121,9 +121,9 @@ export default function RootLayout({ children }: RootLayoutProps): ReactElement 
         m[i].l=1*new Date();
         for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104048503', 'ym');
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=103872130', 'ym');
 
-    ym(104048503, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    ym(103872130, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
             `
           }}
         />
@@ -218,7 +218,7 @@ export default function RootLayout({ children }: RootLayoutProps): ReactElement 
         <noscript>
           <div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://mc.yandex.ru/watch/104048503" style={{position:'absolute', left:'-9999px'}} alt="" />
+            <img src="https://mc.yandex.ru/watch/103872130" style={{position:'absolute', left:'-9999px'}} alt="" />
           </div>
         </noscript>
         {/* Skip to main content link for accessibility */}
